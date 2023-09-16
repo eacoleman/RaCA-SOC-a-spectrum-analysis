@@ -9,9 +9,12 @@ import torch.optim as optim
 import json
 import gc
 from tqdm.notebook import tqdm
+from sklearn.model_selection import train_test_split
+import pdb
+
 plt.rcParams['text.usetex'] = True
 
-from utils import postProcessSpectrum, gaus, genSeedMs, fakeTrough, A, torchA
+from utils import postProcessSpectrum, gaus, genSeedMs, fakeTrough, A, torchA, calculate_accuracy
 from models import LinearMixingModel
 
 (XF, dataI, sample_soc, sample_socsd) = torch.load('../RaCA-data-first100.pt')
@@ -158,11 +161,21 @@ trrsoc   = torch.tensor(seedSOCrr)
 
 # empirical data: (SOC values, reflectances, and max normalized reflectance)
 ys = (tmsoc,torch.tensor(dataI[dataIndices].tolist()),torch.tensor([]))
-
+pdb.set_trace()
 nepochs = 10000
 model = LinearMixingModel(tF,tFsoc,tseedMs,trhorads,trrsoc,nepochs)
 optimizer = optim.Adam(model.parameters(), lr = 0.00002, betas=(0.99,0.999))
 
+
+X_train, X_val, y_train, y_val = train_test_split(dataI, msoc, test_size=0.2, random_state=42)
+
+def validate(model, X_val, y_val):
+    with torch.no_grad():
+        # Assuming you have defined the forward function in your model
+        loss = model((torch.tensor(y_val), torch.tensor(X_val), torch.tensor([])))
+    return loss.item()
+
+pdb.set_trace()
 
 for epoch in tqdm(range(nepochs)) :
     loss = model(ys)
@@ -170,8 +183,23 @@ for epoch in tqdm(range(nepochs)) :
     e.backward()
     optimizer.step()
     if epoch % 100 == 0:
-    	print("Epoch ",epoch,": ", loss.detach().item(), model.lsq[epoch], model.lsq[epoch] / (0.01 ** 2) / (NPoints*MSpectra))
+        print("Epoch ",epoch,": ", loss.detach().item(), model.lsq[epoch], model.lsq[epoch] / (0.01 ** 2) / (NPoints*MSpectra))
+
+        with torch.no_grad():
+            X_val_tensor = torch.tensor(X_val)
+            y_val_tensor = torch.tensor(y_val)
+
+            validation_predictions = model((y_val_tensor, X_val_tensor, torch.tensor([])))
+            accuracy = calculate_accuracy(validation_predictions, y_val_tensor)
+            print("Validation Accuracy: {:.4f}".format(accuracy))
+
+
     optimizer.zero_grad()
+
+
+
+
+
 
 plt.plot(XF,model.fsoc.detach().numpy(),'black')
 plt.plot(XF,seedFsoc,'blue')

@@ -93,7 +93,7 @@ lossTracking = np.zeros(nepochs);
 #     if epoch % 100 == 0:
 #         print(f'Epoch [{epoch}/{nepochs}], Loss: {e.item()}')
 
-for epoch in tqdm(range(nepochs)):
+for epoch in tqdm(range(nepochs)): # make train val curves
     seedEncoderModel.train()  # Set the model to training mode
     for batch in train_loader:
         tIs_batch, tMs_batch = batch
@@ -166,3 +166,4 @@ plt.grid()
 
 
 
+#Ecol ONvohp4gqob@

@@ -65,3 +65,10 @@ def A(ms,rhorads) :
 def torchA(ms,rhorads) :
     tA = ms / rhorads
     return (tA.t() / torch.sum(tA,axis=1)).t()
+def calculate_accuracy(predictions, ground_truth):
+    # Define your accuracy calculation logic here
+    # For example, if you are doing classification:
+    correct = (predictions == ground_truth).sum().item()
+    total = len(ground_truth)
+    accuracy = correct / total
+    return accuracy
