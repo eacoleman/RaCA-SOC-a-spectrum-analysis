@@ -92,7 +92,8 @@ lossTracking = np.zeros(nepochs);
 #     # Print loss every 100 epochs
 #     if epoch % 100 == 0:
 #         print(f'Epoch [{epoch}/{nepochs}], Loss: {e.item()}')
-
+training_losses = []
+validation_losses = []
 for epoch in tqdm(range(nepochs)): # make train val curves
     seedEncoderModel.train()  # Set the model to training mode
     for batch in train_loader:
@@ -103,6 +104,7 @@ for epoch in tqdm(range(nepochs)): # make train val curves
         e.backward()
         optimizer.step()
         optimizer.zero_grad()
+        training_losses.append(e.item())
 
     lossTracking[cEpoch] = e.detach().item()
     cEpoch += 1
@@ -121,7 +123,21 @@ for epoch in tqdm(range(nepochs)): # make train val curves
                 val_preds = seedEncoderModel(tIs_val_batch)
                 val_loss += torch.mean((val_preds - tMs_val_batch)**2)
             val_loss /= len(val_loader)
+            validation_losses.append(val_loss.item())
         print(f'Validation Loss: {val_loss.item()}')
+
+epochs = np.arange(1, nepochs + 1)
+
+# Plot training and validation losses on the same plot
+plt.figure(figsize=(10, 6))
+plt.plot(epochs, lossTracking, 'b', label='Training Loss')
+plt.plot(epochs[::100], validation_losses, 'r', label='Validation Loss')
+plt.title('Training and Validation Loss Curves')
+plt.xlabel('Epochs')
+plt.ylabel('Loss')
+plt.legend()
+plt.grid(True)
+plt.show()
 
 print("Epoch ",epoch,": ", lossTracking[-1], lossTracking[-1] / (0.01 ** 2) / (KEndmembers))
 
