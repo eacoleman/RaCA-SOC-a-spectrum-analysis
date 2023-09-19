@@ -137,7 +137,7 @@ plt.xlabel('Epochs')
 plt.ylabel('Loss')
 plt.legend()
 plt.grid(True)
-plt.show()
+plt.savefig('train_val_curves')
 
 print("Epoch ",epoch,": ", lossTracking[-1], lossTracking[-1] / (0.01 ** 2) / (KEndmembers))
 

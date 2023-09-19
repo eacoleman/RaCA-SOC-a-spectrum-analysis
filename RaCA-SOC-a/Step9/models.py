@@ -42,7 +42,10 @@ class LinearMixingEncoder(nn.Module):
             # Use leaky ReLU: has gradient !=0 at large negative values
             # so that very small abundances (large neg. values at this layer)
             # sit in a region of nonvanishing gradient
-            nn.LeakyReLU()            
+            # nn.ELU()
+            # nn.SiLU()
+            nn.LeakyReLU()    
+            # nn.ReLU()        
         )
         
         # Softmax to ensure abundances add up to 1
