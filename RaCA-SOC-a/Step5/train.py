@@ -11,13 +11,32 @@ import gc
 from tqdm.notebook import tqdm
 from sklearn.model_selection import train_test_split
 import pdb
+import pickle
 
 plt.rcParams['text.usetex'] = True
 
 from utils import postProcessSpectrum, gaus, genSeedMs, fakeTrough, A, torchA, calculate_accuracy
 from models import LinearMixingModel
 
-(XF, dataI, sample_soc, sample_socsd) = torch.load('../RaCA-data-first100.pt')
+#Data loading (either first 100 or full)
+# (XF, dataI, sample_soc, sample_socsd) = torch.load('../RaCA-data-first100.pt')
+data = np.loadtxt("/home/sujaynair/RaCA-spectra-raw.txt",
+                 delimiter=",", dtype=str)
+data[0,2152:]
+sample_top   = data[1:,2153].astype('float32')
+sample_bot   = data[1:,2154].astype('float32')
+sample_txtr  = data[1:,2156]
+sample_bd    = data[1:,2158].astype('float32')
+sample_bdsd  = data[1:,2159].astype('float32')
+sample_soc   = data[1:,2162].astype('float32')
+sample_socsd = data[1:,2163].astype('float32')
+
+dataI = data[1:,1:2152].astype('float32')
+XF = np.array([x for x in range(350,2501)]);
+
+# dataI = dataI[:100,:]
+# sample_soc = sample_soc[:100]
+
 for iSpec in tqdm(range(dataI.shape[0])): # This is data normalization? 
             
     wavelengths = [x for x in range(350,2501)]
@@ -32,6 +51,8 @@ KEndmembers = 90
 NPoints = dataI.shape[0]
 NData = dataI.shape[0]
 MSpectra = 2151
+#End data loading and processing
+
 
 # load JSON file with pure spectra
 endMemMap = json.load(open('../../data/endmember spectral data.json')) #compound values at wavelengths
@@ -63,7 +84,7 @@ plt.xscale('log')
 plt.xlim([0,35])
 plt.legend()
 plt.grid()
-plt.savefig('1SOC_Dist')
+plt.savefig('1SOC_Dist_FULL')
 plt.close()
 msoc=msoc/100.0
 
@@ -96,7 +117,7 @@ plt.xlabel("Wavelength [nm]",fontsize=15)
 plt.ylabel("Reflectance",fontsize=15)
 plt.title("SOC seed pseudospectra",fontsize=20)
 plt.grid()
-plt.savefig('2SOC_seed_pseudo')
+plt.savefig('2SOC_seed_pseudo_FULL')
 plt.close()
 
 
@@ -112,7 +133,7 @@ plt.ylabel(r'Reflectance',fontsize=15)
 plt.title(r'USGS pure endmember spectra',fontsize=20)
 plt.xlim([350,2500])
 plt.grid()
-plt.savefig('3USGS_endmember_spec')
+plt.savefig('3USGS_endmember_spec_FULL')
 plt.close()
 
 
@@ -122,7 +143,7 @@ plt.ylabel(r'Reflectance',fontsize=15)
 plt.title(r'Seed pseudospectra',fontsize=20)
 plt.xlim([350,2500])
 plt.grid()
-plt.savefig('4Seed_pseudospec')
+plt.savefig('4Seed_pseudospec_FULL')
 plt.close()
 
 
@@ -132,7 +153,7 @@ plt.ylabel(r'Reflectance',fontsize=15)
 plt.title(r'RaCA spectra',fontsize=20)
 plt.xlim([350,2500])
 plt.grid()
-plt.savefig('5RaCA_spec')
+plt.savefig('5RaCA_spec_FULL')
 plt.close()
 
 
@@ -147,7 +168,7 @@ plt.vlines(seedSOCrr,ymin=0,ymax=np.max(th[0])*1.05,color='orange',label=r'Pseud
 ax.add_patch(Rectangle((trueSOCrr*0.8,0),trueSOCrr*0.4,np.max(th[0])*1.05,facecolor="orange",alpha=0.5,label=r'$\pm1\sigma$ band of seed distribution'));
 plt.ylim([0,np.max(th[0])*1.05])
 plt.legend()
-plt.savefig('6Dist_partic_area_MASS')
+plt.savefig('6Dist_partic_area_MASS_FULL')
 plt.close()
 
 
@@ -162,12 +183,15 @@ trrsoc   = torch.tensor(seedSOCrr)
 # empirical data: (SOC values, reflectances, and max normalized reflectance)
 ys = (tmsoc,torch.tensor(dataI[dataIndices].tolist()),torch.tensor([]))
 pdb.set_trace()
-nepochs = 10000
+nepochs = 1000 #usually 10000
 model = LinearMixingModel(tF,tFsoc,tseedMs,trhorads,trrsoc,nepochs)
 optimizer = optim.Adam(model.parameters(), lr = 0.00002, betas=(0.99,0.999))
 
-
-X_train, X_val, y_train, y_val = train_test_split(dataI, msoc, test_size=0.2, random_state=42)
+pdb.set_trace()
+with open('Step5FULLMODEL.pkl', 'wb') as file:
+        pickle.dump((model,optimizer,F,seedFsoc,trueFsoc,seedMs,dataIndices,msoc,rhorads,seedSOCrr,trueSOCrr), file)
+pdb.set_trace()
+# X_train, X_val, y_train, y_val = train_test_split(dataI, msoc, test_size=0.2, random_state=42)
 
 def validate(model, X_val, y_val):
     with torch.no_grad():
@@ -175,7 +199,7 @@ def validate(model, X_val, y_val):
         loss = model((torch.tensor(y_val), torch.tensor(X_val), torch.tensor([])))
     return loss.item()
 
-pdb.set_trace()
+
 
 for epoch in tqdm(range(nepochs)) :
     loss = model(ys)
@@ -185,13 +209,13 @@ for epoch in tqdm(range(nepochs)) :
     if epoch % 100 == 0:
         print("Epoch ",epoch,": ", loss.detach().item(), model.lsq[epoch], model.lsq[epoch] / (0.01 ** 2) / (NPoints*MSpectra))
 
-        with torch.no_grad():
-            X_val_tensor = torch.tensor(X_val)
-            y_val_tensor = torch.tensor(y_val)
+        # with torch.no_grad():
+        #     X_val_tensor = torch.tensor(X_val)
+        #     y_val_tensor = torch.tensor(y_val)
 
-            validation_predictions = model((y_val_tensor, X_val_tensor, torch.tensor([])))
-            accuracy = calculate_accuracy(validation_predictions, y_val_tensor)
-            print("Validation Accuracy: {:.4f}".format(accuracy))
+        #     validation_predictions = model((y_val_tensor, X_val_tensor, torch.tensor([])))
+        #     accuracy = calculate_accuracy(validation_predictions, y_val_tensor)
+        #     print("Validation Accuracy: {:.4f}".format(accuracy))
 
 
     optimizer.zero_grad()
@@ -204,7 +228,7 @@ for epoch in tqdm(range(nepochs)) :
 plt.plot(XF,model.fsoc.detach().numpy(),'black')
 plt.plot(XF,seedFsoc,'blue')
 plt.plot(XF,trueFsoc,'orange')
-plt.savefig('7Fsocs')
+plt.savefig('7Fsocs_FULL')
 print(model.rrsoc.detach().item(),seedSOCrr[0],trueSOCrr)
 
 
@@ -238,7 +262,7 @@ axarr[2,1].set_xlabel("Epoch")
 axarr[2,1].set_ylabel("Total diff loss")
 
 plt.tight_layout()
-plt.savefig('8Loss_Curves')
+plt.savefig('8Loss_Curves_FULL')
 plt.close()
 
 
@@ -283,7 +307,7 @@ for iEndmember in tqdm(range(model.ms.detach().numpy().shape[1])):
     
     
 f.tight_layout()
-plt.savefig('9Endmember_Values')
+plt.savefig('9Endmember_Values_FULL')
 
 
 

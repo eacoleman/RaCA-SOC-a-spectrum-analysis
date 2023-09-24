@@ -1,0 +1,60 @@
+2023-09-23 17:15:27,815 INFO    MainThread:3289785 [wandb_setup.py:_flush():76] Current SDK version is 0.15.10
+2023-09-23 17:15:27,815 INFO    MainThread:3289785 [wandb_setup.py:_flush():76] Configure stats pid to 3289785
+2023-09-23 17:15:27,815 INFO    MainThread:3289785 [wandb_setup.py:_flush():76] Loading settings from /home/sujaynair/.config/wandb/settings
+2023-09-23 17:15:27,815 INFO    MainThread:3289785 [wandb_setup.py:_flush():76] Loading settings from /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/settings
+2023-09-23 17:15:27,815 INFO    MainThread:3289785 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-09-23 17:15:27,815 INFO    MainThread:3289785 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-09-23 17:15:27,815 INFO    MainThread:3289785 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'RaCA-SOC-a/Step9/train.py', 'program': '/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/train.py'}
+2023-09-23 17:15:27,815 INFO    MainThread:3289785 [wandb_init.py:_log_setup():524] Logging user logs to /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230923_171527-7ldoofhm/logs/debug.log
+2023-09-23 17:15:27,815 INFO    MainThread:3289785 [wandb_init.py:_log_setup():525] Logging internal logs to /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230923_171527-7ldoofhm/logs/debug-internal.log
+2023-09-23 17:15:27,816 INFO    MainThread:3289785 [wandb_init.py:init():564] calling init triggers
+2023-09-23 17:15:27,816 INFO    MainThread:3289785 [wandb_init.py:init():571] wandb.init called with sweep_config: {}
+config: {'learning_rate': 5e-06, 'architecture': 'Mixing', 'dataset': 'Spectra', 'epochs': 5}
+2023-09-23 17:15:27,816 INFO    MainThread:3289785 [wandb_init.py:init():614] starting backend
+2023-09-23 17:15:27,816 INFO    MainThread:3289785 [wandb_init.py:init():618] setting up manager
+2023-09-23 17:15:27,816 INFO    MainThread:3289785 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-09-23 17:15:27,817 INFO    MainThread:3289785 [wandb_init.py:init():624] backend started and connected
+2023-09-23 17:15:27,818 INFO    MainThread:3289785 [wandb_init.py:init():715] updated telemetry
+2023-09-23 17:15:27,821 INFO    MainThread:3289785 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2023-09-23 17:15:28,227 INFO    MainThread:3289785 [wandb_run.py:_on_init():2220] communicating current version
+2023-09-23 17:15:28,349 INFO    MainThread:3289785 [wandb_run.py:_on_init():2229] got version response upgrade_message: "wandb version 0.15.11 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-09-23 17:15:28,349 INFO    MainThread:3289785 [wandb_init.py:init():799] starting run threads in backend
+2023-09-23 17:15:28,394 INFO    MainThread:3289785 [wandb_run.py:_console_start():2199] atexit reg
+2023-09-23 17:15:28,394 INFO    MainThread:3289785 [wandb_run.py:_redirect():2054] redirect: wrap_raw
+2023-09-23 17:15:28,394 INFO    MainThread:3289785 [wandb_run.py:_redirect():2119] Wrapping output streams.
+2023-09-23 17:15:28,395 INFO    MainThread:3289785 [wandb_run.py:_redirect():2144] Redirects installed.
+2023-09-23 17:15:28,395 INFO    MainThread:3289785 [wandb_init.py:init():840] run started, returning control to user process
+2023-09-23 17:25:16,584 INFO    MainThread:3289785 [wandb_run.py:_finish():1934] finishing run ml_nair/SOC_ML/7ldoofhm
+2023-09-23 17:25:16,584 INFO    MainThread:3289785 [wandb_run.py:_atexit_cleanup():2168] got exitcode: 0
+2023-09-23 17:25:16,584 INFO    MainThread:3289785 [wandb_run.py:_restore():2151] restore
+2023-09-23 17:25:16,584 INFO    MainThread:3289785 [wandb_run.py:_restore():2157] restore done
+2023-09-23 17:25:19,919 INFO    MainThread:3289785 [wandb_run.py:_restore():2151] restore
+2023-09-23 17:25:19,919 INFO    MainThread:3289785 [wandb_run.py:_restore():2157] restore done
+2023-09-23 17:25:20,921 ERROR   MainThread:3289785 [wandb_run.py:_atexit_cleanup():2189] Problem finishing run
+Traceback (most recent call last):
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2177, in _atexit_cleanup
+    self._on_finish()
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 2416, in _on_finish
+    _ = exit_handle.wait(timeout=-1, on_progress=self._on_progress_exit)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/wandb/sdk/lib/mailbox.py", line 283, in wait
+    found, abandoned = self._slot._get_and_clear(timeout=wait_timeout)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/wandb/sdk/lib/mailbox.py", line 130, in _get_and_clear
+    if self._wait(timeout=timeout):
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/wandb/sdk/lib/mailbox.py", line 126, in _wait
+    return self._event.wait(timeout=timeout)
+  File "/usr/lib/python3.10/threading.py", line 607, in wait
+    signaled = self._cond.wait(timeout)
+  File "/usr/lib/python3.10/threading.py", line 324, in wait
+    gotit = waiter.acquire(True, timeout)
+  File "/usr/lib/python3.10/pdb.py", line 183, in sigint_handler
+    self.message("\nProgram interrupted. (Use 'cont' to resume).")
+  File "/usr/lib/python3.10/pdb.py", line 448, in message
+    print(msg, file=self.stdout)
+  File "/usr/lib/python3.10/pdb.py", line 448, in message
+    print(msg, file=self.stdout)
+  File "/usr/lib/python3.10/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.10/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

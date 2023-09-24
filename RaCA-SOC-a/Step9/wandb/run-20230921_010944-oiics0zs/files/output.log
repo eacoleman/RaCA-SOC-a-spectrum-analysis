@@ -1,0 +1,15 @@
+Loaded txt
+> /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/train.py(54)<module>()
+-> ttrrFull = torch.cat((model.rhorad,model.rrsoc))
+> /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/train.py(60)<module>()
+-> rrFullRaCAFit = ttrrFull.detach().numpy()
+1944360
+  0%|          | 0/1000 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/train.py", line 130, in <module>
+    t3 = time.time()
+NameError: name 'time' is not defined
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/train.py", line 130, in <module>
+    t3 = time.time()
+NameError: name 'time' is not defined

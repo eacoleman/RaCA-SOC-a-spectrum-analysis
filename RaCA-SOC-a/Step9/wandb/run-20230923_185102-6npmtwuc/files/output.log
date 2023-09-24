@@ -1,0 +1,57 @@
+
+Loaded txt
+1944360
+  0%|          | 0/50 [00:00<?, ?it/s]
+/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/models.py:59: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  ms = self.smax(y_mlp);
+Epoch [0/50], Loss: 0.00051831582095474
+Validation Loss: 0.00032960850512608886
+Validation Loss: 0.00011121042189188302
+Validation Loss: 3.359639958944172e-05
+Validation Loss: 2.249751014460344e-05
+Validation Loss: 2.1800462491228245e-05
+Validation Loss: 1.7294971257797442e-05
+Validation Loss: 2.684572791622486e-05
+Validation Loss: 1.6950078133959323e-05
+Validation Loss: 1.7631493392400444e-05
+Validation Loss: 1.7546128219692037e-05
+Validation Loss: 1.557143150421325e-05
+Validation Loss: 1.629824510018807e-05
+Validation Loss: 1.5054778486955911e-05
+Validation Loss: 1.4325019947136752e-05
+Validation Loss: 1.580528805789072e-05
+Validation Loss: 9.408993719262071e-06
+Validation Loss: 1.0240395567961968e-05
+Validation Loss: 9.538257472740952e-06
+Validation Loss: 1.225455980602419e-05
+Validation Loss: 1.2833083928853739e-05
+Validation Loss: 9.530236638966016e-06
+Validation Loss: 8.93070682650432e-06
+Validation Loss: 1.2491030247474555e-05
+Validation Loss: 1.2849878658016678e-05
+Validation Loss: 9.059754120244179e-06
+Validation Loss: 9.204360139847267e-06
+Validation Loss: 1.0937382285192143e-05
+Validation Loss: 8.150918802130036e-06
+Validation Loss: 1.1277532394160517e-05
+Validation Loss: 1.2363148925942369e-05
+Validation Loss: 1.1435477972554509e-05
+Validation Loss: 8.253614396380726e-06
+Validation Loss: 1.0838759408215992e-05
+Validation Loss: 1.175222951133037e-05
+Validation Loss: 1.3845350622432306e-05
+Validation Loss: 9.048011634149589e-06
+Validation Loss: 9.867980224953499e-06
+Validation Loss: 8.347215043613687e-06
+Validation Loss: 9.413834050064906e-06
+Validation Loss: 1.0912544894381426e-05
+Validation Loss: 7.335592272283975e-06
+Validation Loss: 1.0990185728587676e-05
+Validation Loss: 6.8770577854593284e-06
+Validation Loss: 7.519220616813982e-06
+Validation Loss: 1.1709951650118455e-05
+Validation Loss: 1.1006724889739417e-05
+Validation Loss: 1.0292320439475589e-05
+Validation Loss: 1.1667232683976181e-05
+Validation Loss: 1.1631638699327596e-05
+Validation Loss: 1.3255224985186942e-05

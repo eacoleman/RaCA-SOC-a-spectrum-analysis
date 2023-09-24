@@ -7,3 +7,5 @@ RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/run-RaCA-SOC-a_step9.ipynb
 *.icloud
 *.DS_Store
 *.pkl
+/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb
+

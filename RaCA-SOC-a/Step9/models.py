@@ -13,6 +13,9 @@ from sklearn.model_selection import train_test_split
 import pdb
 import pickle
 
+
+from utils import *
+
 class LinearMixingEncoder(nn.Module):
     def __init__(self, M, K, hidden_size):
         super().__init__()

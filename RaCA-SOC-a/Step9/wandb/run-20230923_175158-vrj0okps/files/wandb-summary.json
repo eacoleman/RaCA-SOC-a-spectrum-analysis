@@ -1,0 +1,1 @@
+{"Training Loss": 1.2016140317427926e-05, "Validation Loss": 3.393205042812042e-05, "Batch Processing": -0.0012950897216796875, "Forward Pass": 0.0003895759582519531, "Backward Pass": 0.0009055137634277344, "_timestamp": 1695506046.613891, "_runtime": 127.75407195091248, "_step": 4, "_wandb": {"runtime": 127}}

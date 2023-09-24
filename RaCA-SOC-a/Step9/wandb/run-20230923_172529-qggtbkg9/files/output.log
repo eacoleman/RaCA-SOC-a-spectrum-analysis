@@ -1,0 +1,54 @@
+
+Loaded txt
+1944360
+  0%|          | 0/5 [00:00<?, ?it/s]
+/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/models.py:59: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  ms = self.smax(y_mlp);
+Epoch [0/5], Loss: 0.0002461333351675421
+Validation Loss: 0.00022911130508873612
+Validation Loss: 8.685555076226592e-05
+Validation Loss: 5.124038580106571e-05
+Validation Loss: 2.7082691303803585e-05
+Validation Loss: 5.508217873284593e-05
+> /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/train.py(194)<module>()
+-> fig, ax = plt.subplots(figsize=(5,5))
+Program interrupted. (Use 'cont' to resume).
+> /usr/lib/python3/dist-packages/gi/_ossighelper.py(93)signal_notify()
+-> if condition & GLib.IO_IN:
+--KeyboardInterrupt--
+--KeyboardInterrupt--
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gi/_ossighelper.py", line 93, in signal_notify
+    if condition & GLib.IO_IN:
+  File "/usr/lib/python3/dist-packages/gi/_ossighelper.py", line 93, in signal_notify
+    if condition & GLib.IO_IN:
+  File "/usr/lib/python3.10/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.10/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gi/_ossighelper.py", line 93, in signal_notify
+    if condition & GLib.IO_IN:
+  File "/usr/lib/python3/dist-packages/gi/_ossighelper.py", line 93, in signal_notify
+    if condition & GLib.IO_IN:
+  File "/usr/lib/python3.10/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.10/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+Traceback (most recent call last):
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/matplotlib/backends/backend_gtk4.py", line 157, in enter_notify_event
+    def enter_notify_event(self, controller, x, y):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/matplotlib/backends/backend_gtk4.py", line 157, in enter_notify_event
+    def enter_notify_event(self, controller, x, y):
+KeyboardInterrupt
+1944360
+193591.0
+  0%|          | 0/30 [00:00<?, ?it/s]
+/usr/lib/python3/dist-packages/gi/_ossighelper.py:119: Warning: Source ID 362 was not found when attempting to remove it
+  GLib.source_remove(source_id)
+/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/models.py:59: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  ms = self.smax(y_mlp);

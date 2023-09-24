@@ -1,0 +1,89 @@
+
+Loaded txt
+1944360
+  0%|          | 0/1000 [00:00<?, ?it/s]
+/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/models.py:56: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  ms = self.smax(y_mlp);
+Epoch [0/1000], Loss: 0.000600389379542321
+Validation Loss: 0.00027900130953639746
+Validation Loss: 8.331244316650555e-05
+Validation Loss: 4.079290010849945e-05
+Validation Loss: 2.104864142893348e-05
+Validation Loss: 2.6973830244969577e-05
+Validation Loss: 2.3623097149538808e-05
+Validation Loss: 2.1846266463398933e-05
+Validation Loss: 1.754192271619104e-05
+Validation Loss: 1.4005913726578001e-05
+Validation Loss: 2.1490055587491952e-05
+Validation Loss: 1.644819712964818e-05
+Validation Loss: 2.0298310118960217e-05
+Validation Loss: 1.714034988253843e-05
+Validation Loss: 1.084754603652982e-05
+Validation Loss: 1.448357397748623e-05
+Validation Loss: 1.245299426955171e-05
+Validation Loss: 1.3930537534179166e-05
+Validation Loss: 1.438909112039255e-05
+Validation Loss: 1.1348387488396838e-05
+Validation Loss: 1.0130723239853978e-05
+Validation Loss: 1.3173900697438512e-05
+Validation Loss: 1.3447704077407252e-05
+Validation Loss: 1.1776595783885568e-05
+Validation Loss: 1.1279774298600387e-05
+Validation Loss: 1.4448352885665372e-05
+Validation Loss: 1.1874929441546556e-05
+Validation Loss: 1.4152057701721787e-05
+Validation Loss: 9.768667950993404e-06
+Validation Loss: 9.606649655324873e-06
+Validation Loss: 1.3408014638116583e-05
+Validation Loss: 1.0735639079939574e-05
+Validation Loss: 1.407180661772145e-05
+Validation Loss: 1.274434725928586e-05
+Validation Loss: 9.411744031240232e-06
+Validation Loss: 9.16864155442454e-06
+Validation Loss: 9.318337106378749e-06
+Validation Loss: 1.2619974768313114e-05
+Validation Loss: 1.037240963341901e-05
+Validation Loss: 1.0472182111698203e-05
+Validation Loss: 1.074128977052169e-05
+Validation Loss: 1.0705432941904292e-05
+Validation Loss: 1.214341045852052e-05
+Validation Loss: 1.3959835087007377e-05
+Validation Loss: 1.1552062460395973e-05
+Validation Loss: 1.0814233974087983e-05
+Validation Loss: 1.1970872037636582e-05
+Validation Loss: 1.2837294889322948e-05
+Validation Loss: 1.1268959497101605e-05
+Validation Loss: 1.1736400665540714e-05
+Validation Loss: 6.890754775668029e-06
+Validation Loss: 1.2353047168289777e-05
+Validation Loss: 1.7411703083780594e-05
+Validation Loss: 1.0920562090177555e-05
+Validation Loss: 1.1379386705812067e-05
+Validation Loss: 9.950414096238092e-06
+Validation Loss: 9.121729817707092e-06
+Validation Loss: 9.433781997358892e-06
+Validation Loss: 9.446045623917598e-06
+Validation Loss: 2.127449079125654e-05
+Validation Loss: 1.6711657735868357e-05
+Validation Loss: 1.2427354704414029e-05
+Validation Loss: 1.1170514881087001e-05
+Validation Loss: 1.1437738066888414e-05
+Validation Loss: 1.4775123418075964e-05
+Validation Loss: 1.1313569302728865e-05
+Validation Loss: 9.10425114852842e-06
+Validation Loss: 1.3593815310741775e-05
+Validation Loss: 1.1432453902671114e-05
+Validation Loss: 1.0653570825525094e-05
+Validation Loss: 1.1065764738305006e-05
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/train.py", line 139, in <module>
+    loss = (preds - tMs_batch)**2
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/_tensor.py", line 38, in wrapped
+    if has_torch_function(args):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/train.py", line 139, in <module>
+    loss = (preds - tMs_batch)**2
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/_tensor.py", line 38, in wrapped
+    if has_torch_function(args):
+KeyboardInterrupt

@@ -1,0 +1,12 @@
+
+Loaded txt
+1944360
+  0%|          | 0/5 [00:00<?, ?it/s]
+/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/models.py:59: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  ms = self.smax(y_mlp);
+Epoch [0/5], Loss: 0.0005175682017579675
+Validation Loss: 0.00028724930598400533
+Validation Loss: 7.379469025181606e-05
+Validation Loss: 3.388168988749385e-05
+Validation Loss: 1.9289915144327097e-05
+Validation Loss: 2.1880654458072968e-05
