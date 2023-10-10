@@ -12,6 +12,10 @@ from tqdm.notebook import tqdm
 import pickle
 plt.rcParams['text.usetex'] = True
 
+
+def remove_outliers(data, threshold=3):
+    z_scores = np.abs((data - data.mean()) / data.std())
+    return data[z_scores < threshold]
 def postProcessSpectrum(xin,xout,refin): # Linear interpolation
     return np.interp(xout, xin, refin)
 def gaus(mu, sigma, N=1) :

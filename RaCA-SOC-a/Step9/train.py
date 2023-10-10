@@ -17,8 +17,8 @@ import time
 from sklearn.metrics import r2_score
 from sklearn.linear_model import LinearRegression
 
-from models import *
-from utils import *
+from models import LinearMixingEncoder, LinearMixingDecoder, LinearMixingModel, LinearMixingSOCPredictor
+from utils import remove_outliers, postProcessSpectrum, gaus, genSeedMs, fakeTrough, A, torchA, calculate_accuracy
 
 wandb.init(
     # set the wandb project where this run will be logged
@@ -64,7 +64,7 @@ del model
 
 plt.plot(XF, dataI[dataIndices][0])
 plt.plot(XF, IhFullRaCAFit[0])
-plt.show()
+# plt.show()
 
 KEndmembers = 90
 NPoints = IhFullRaCAFit.shape[0]
@@ -95,7 +95,7 @@ train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size,
 val_loader = torch.utils.data.DataLoader(val_dataset, batch_size=batch_size, shuffle=False, num_workers = 8)
 
 # Training settings, optimizer declarations
-nepochs = 50
+nepochs = 100
 seedEncoderModel = LinearMixingEncoder(MSpectra, KEndmembers, 512).to(device)
 optimizer = optim.Adam(seedEncoderModel.parameters(), lr = 0.000005, betas=(0.99,0.999))
 preds = []
@@ -181,7 +181,7 @@ axarr[1].set_xlabel("Epoch")
 axarr[1].set_ylabel("chi2/NDF")
 
 plt.tight_layout()
-plt.show()
+# plt.show()
 
 # pdb.set_trace()
 
@@ -215,9 +215,6 @@ tIs      = torch.tensor(dataI[dataIndices.astype('int')].tolist()).to(device)
 
 preds = seedEncoderModel(tIs)
 
-def remove_outliers(data, threshold=3):
-    z_scores = np.abs((data - data.mean()) / data.std())
-    return data[z_scores < threshold]
 
 # pdb.set_trace()
 # Convert PyTorch tensors to NumPy arrays if needed
@@ -263,7 +260,7 @@ plt.legend()
 # Display the plot
 plt.title('Scatter Plot of Predicted vs. Ground Truth msoc (No Major Outliers)')
 plt.grid(True)
-plt.show()
+# plt.show()
 
 
 
@@ -273,7 +270,7 @@ plt.show()
 tmsoc    = torch.tensor(sample_soc[dataIndices.astype('int')].tolist()).to(device)
 tmsoc    = tmsoc / 100.
 
-nepochs = 3000 #1000000
+nepochs = 20000 #20000
 encoderModel = seedEncoderModel.to(device)
 decoderModel = LinearMixingDecoder(tFs, tMs, trhorads).to(device)
 encoderDecoderParams = list(decoderModel.parameters()) + list(encoderModel.parameters())
@@ -302,39 +299,6 @@ decoderPreds=[]
 
 train_tIs, val_tIs, train_tmsoc, val_tmsoc = train_test_split(tIs, tmsoc, test_size=0.2, random_state=42)
 
-
-# for epoch in tqdm(range(nepochs)) :
-#     # Log rrsoc
-#     rrTracking[cEpoch] = decoderModel.rrsoc.detach().item()
-
-#     # Get abundance predictions from encoder
-#     encoderPreds = encoderModel(tIs)
-    
-#     # Get spectrum predictions from decoder
-#     decoderPreds = decoderModel(encoderPreds)
-    
-#     # Compute encoder loss: sqerr from true Msoc values
-#     loss = 1000*torch.mean((encoderPreds[:,-1] - tmsoc)**2) 
-    
-    
-#     [cEpoch] = loss.detach().item()
-    
-#     # Add decoder loss: sqerr from true RaCA spectra
-#     dcLoss = torch.mean((decoderPreds - tIs)**2)
-#     lossTrackingDecoder[cEpoch] = dcLoss.detach().item()
-#     lossTrackingDecoderLagrangeFactor[cEpoch] = decoderModel.computeLagrangeLossFactor().detach().item()
-#     dcLoss = dcLoss * decoderModel.computeLagrangeLossFactor()
-
-#     loss = loss + dcLoss
-
-#     loss.backward()
-
-#     decoderModel.Fs.grad[:-1,:] = 0
-
-#     optimizer.step()
-#     optimizer.zero_grad()
-
-#     cEpoch += 1
 
 
 wandb.init(
@@ -401,7 +365,7 @@ for epoch in tqdm(range(nepochs)):
 
     print(lossTrackingEncoderV[epoch])
     print(lossTrackingDecoderV[epoch])
-
+    #FOR PLOT 3
     # After each epoch, log the metrics individually with x-axis values
 
     
@@ -413,72 +377,150 @@ wandb.finish()
 
 print("Epoch ",epoch,": ", lossTrackingEncoder[-1]+lossTrackingDecoder[-1])
 
-# Create a single figure with four subplots
-fig, axes = plt.subplots(2, 2, figsize=(12, 8))
+# # Create a single figure with four subplots
+# fig, axes = plt.subplots(2, 2, figsize=(12, 8))
+
+# # Plot training and validation loss for encoder
+# axes[0, 0].scatter(range(lossTrackingEncoder.shape[0]), lossTrackingEncoder, label='Train')
+# axes[0, 0].set_xlabel("Epoch")
+# axes[0, 0].set_ylabel("chi2/NDF")
+# axes[0, 0].legend()
+# axes[0, 0].set_title("Encoder Training Loss")
+
+# axes[0, 1].scatter(range(lossTrackingEncoderV.shape[0]), lossTrackingEncoderV, label='Validation')
+# axes[0, 1].set_xlabel("Epoch")
+# axes[0, 1].set_ylabel("chi2/NDF")
+# axes[0, 1].legend()
+# axes[0, 1].set_title("Encoder Validation Loss")
+
+# # Plot training and validation loss for decoder
+# axes[1, 0].scatter(range(lossTrackingDecoder.shape[0]), lossTrackingDecoder, label='Train')
+# axes[1, 0].set_xlabel("Epoch")
+# axes[1, 0].set_ylabel("chi2/NDF")
+# axes[1, 0].legend()
+# axes[1, 0].set_title("Decoder Training Loss")
+
+# axes[1, 1].scatter(range(lossTrackingDecoderV.shape[0]), lossTrackingDecoderV, label='Validation')
+# axes[1, 1].set_xlabel("Epoch")
+# axes[1, 1].set_ylabel("chi2/NDF")
+# axes[1, 1].legend()
+# axes[1, 1].set_title("Decoder Validation Loss")
+
+# # Adjust the layout
+# plt.tight_layout()
+
+# # Show the plot
+# plt.show()
+
+
+# Create a single figure
+fig, ax = plt.subplots(figsize=(12, 8))
 
 # Plot training and validation loss for encoder
-axes[0, 0].scatter(range(lossTrackingEncoder.shape[0]), lossTrackingEncoder, label='Train')
-axes[0, 0].set_xlabel("Epoch")
-axes[0, 0].set_ylabel("chi2/NDF")
-axes[0, 0].legend()
-axes[0, 0].set_title("Encoder Training Loss")
-
-axes[0, 1].scatter(range(lossTrackingEncoderV.shape[0]), lossTrackingEncoderV, label='Validation')
-axes[0, 1].set_xlabel("Epoch")
-axes[0, 1].set_ylabel("chi2/NDF")
-axes[0, 1].legend()
-axes[0, 1].set_title("Encoder Validation Loss")
+ax.scatter(range(lossTrackingEncoder.shape[0]), lossTrackingEncoder, label='Encoder Train', alpha=0.5)
+ax.scatter(range(lossTrackingEncoderV.shape[0]), lossTrackingEncoderV, label='Encoder Validation', alpha=0.5)
 
 # Plot training and validation loss for decoder
-axes[1, 0].scatter(range(lossTrackingDecoder.shape[0]), lossTrackingDecoder, label='Train')
-axes[1, 0].set_xlabel("Epoch")
-axes[1, 0].set_ylabel("chi2/NDF")
-axes[1, 0].legend()
-axes[1, 0].set_title("Decoder Training Loss")
+ax.scatter(range(lossTrackingDecoder.shape[0]), lossTrackingDecoder, label='Decoder Train', alpha=0.5)
+ax.scatter(range(lossTrackingDecoderV.shape[0]), lossTrackingDecoderV, label='Decoder Validation', alpha=0.5)
 
-axes[1, 1].scatter(range(lossTrackingDecoderV.shape[0]), lossTrackingDecoderV, label='Validation')
-axes[1, 1].set_xlabel("Epoch")
-axes[1, 1].set_ylabel("chi2/NDF")
-axes[1, 1].legend()
-axes[1, 1].set_title("Decoder Validation Loss")
+# Set a log scale for the Y-axis
+ax.set_yscale('log')
 
-# Adjust the layout
-plt.tight_layout()
+# Set labels and legend
+ax.set_xlabel("Epoch")
+ax.set_ylabel("chi2/NDF")
+ax.legend()
+
+# Set the title
+ax.set_title("Encoder and Decoder Losses")
 
 # Show the plot
+# plt.show()
+
+# pdb.set_trace()
+
+## FOR PLOT 2
+
+# Assuming val_tmsoc, encoderPredsV, train_tmsoc, and encoderPreds are your data
+# Move the tensors to the CPU using .cpu() method and detach them
+val_tmsoc_cpu = val_tmsoc.cpu().detach().numpy()
+encoderPredsV_cpu = encoderPredsV.cpu().detach().numpy()
+train_tmsoc_cpu = train_tmsoc.cpu().detach().numpy()
+encoderPreds_cpu = encoderPreds.cpu().detach().numpy()
+
+# Calculate the slope (m) and intercept (b) for the training data
+m_train, b_train = np.polyfit(train_tmsoc_cpu, encoderPreds_cpu[:, -1], 1)
+
+# Calculate the slope (m) and intercept (b) for the validation data
+m_val, b_val = np.polyfit(val_tmsoc_cpu, encoderPredsV_cpu[:, -1], 1)
+
+# Calculate R-squared values
+r2_train = r2_score(encoderPreds_cpu[:, -1], m_train * train_tmsoc_cpu + b_train)
+r2_val = r2_score(encoderPredsV_cpu[:, -1], m_val * val_tmsoc_cpu + b_val)
+
+# Create a larger figure
+plt.figure(figsize=(8, 8))
+
+# Set the background color to white
+plt.gca().set_facecolor('white')
+
+# Use red for validation data and green with transparency for training data
+plt.scatter(val_tmsoc_cpu, encoderPredsV_cpu[:, -1], label='Validation Data', c='red', alpha=0.7)
+plt.scatter(train_tmsoc_cpu, encoderPreds_cpu[:, -1], label='Training Data', c='green', alpha=0.5)
+
+# Plot lines of best fit with red for validation and green for training
+plt.plot(train_tmsoc_cpu, m_train * train_tmsoc_cpu + b_train, linestyle='--', color='green', label=f'Train Line of Best Fit (R² = {r2_train:.2f})')
+plt.plot(val_tmsoc_cpu, m_val * val_tmsoc_cpu + b_val, linestyle='--', color='red', label=f'Validation Line of Best Fit (R² = {r2_val:.2f})')
+
+plt.xlabel('Ground Truth $m_{SOC}$', fontsize=24)  # Replace with your X-axis label
+plt.ylabel('Predicted $m_{SOC}$', fontsize=24)  # Replace with your Y-axis label
+
+# Move the legend to the top left
+plt.legend(loc='upper left', fontsize=16)
+plt.grid(True)
 plt.show()
 
+# axarr[0,0].scatter(np.array(tmsoc.tolist()),np.array(encoderPreds[:,-1].tolist()))
+# axarr[0,0].set_xlabel("True SOC abundance (TRAIN)")
+# axarr[0,0].set_ylabel("Encoder-predicted SOC abundance (TRAIN)")
+# axarr[0,0].set_xlim([0,1])
+# axarr[0,0].set_ylim([0,1])
 
-_, axarr = plt.subplots(3,2,figsize=(10,10))
+# axarr[0,1].scatter(np.array(val_tmsoc.tolist()),np.array(encoderPredsV[:,-1].tolist()))
+# axarr[0,1].set_xlabel("True SOC abundance (TEST)")
+# axarr[0,1].set_ylabel("Encoder-predicted SOC abundance (TEST)")
+# axarr[0,1].set_xlim([0,1])
+# axarr[0,1].set_ylim([0,1])
 
-axarr[0,0].scatter(np.array(tmsoc.tolist()),np.array(encoderPreds[:,-1].tolist()))
-axarr[0,0].set_xlabel("True SOC abundance")
-axarr[0,0].set_ylabel("Encoder-predicted SOC abundance")
-axarr[0,0].set_xlim([0,1])
-axarr[0,0].set_ylim([0,1])
 
-axarr[0,1].scatter([i for i in range(cEpoch)],lossTrackingEncoder[:cEpoch])
-axarr[0,1].set_xlabel("Epoch")
-axarr[0,1].set_ylabel("Encoder Loss")
 
-axarr[1,0].scatter([i for i in range(cEpoch)],lossTrackingDecoder[:cEpoch])
-axarr[1,0].set_xlabel("Epoch")
-axarr[1,0].set_ylabel("Decoder Loss")
+pdb.set_trace()
 
-axarr[2,1].scatter([i for i in range(cEpoch)],lossTrackingEncoder[:cEpoch]+lossTrackingDecoder[:cEpoch])
-axarr[2,1].set_xlabel("Epoch")
-axarr[2,1].set_ylabel("Total Loss")
 
-axarr[2,0].scatter([i for i in range(cEpoch)],rrTracking[:cEpoch])
-axarr[2,0].set_xlabel("Epoch")
-axarr[2,0].set_ylabel("(rho*r) of SOC")
 
-axarr[1,1].plot(XF, decoderModel.Fs.float().cpu().detach()[-1,:],color='orange',alpha=0.5)
-#axarr[1,1].plot(XF, FsFullRaCAFit[-1,:],color='blue',alpha=0.6)
-axarr[1,1].set_xlabel("Wavelength [nm]")
-axarr[1,1].set_ylabel("Reflectance")
+# axarr[0,1].scatter([i for i in range(cEpoch)],lossTrackingEncoder[:cEpoch])
+# axarr[0,1].set_xlabel("Epoch")
+# axarr[0,1].set_ylabel("Encoder Loss")
 
-plt.tight_layout()
+# axarr[1,0].scatter([i for i in range(cEpoch)],lossTrackingDecoder[:cEpoch])
+# axarr[1,0].set_xlabel("Epoch")
+# axarr[1,0].set_ylabel("Decoder Loss")
+
+# axarr[2,1].scatter([i for i in range(cEpoch)],lossTrackingEncoder[:cEpoch]+lossTrackingDecoder[:cEpoch])
+# axarr[2,1].set_xlabel("Epoch")
+# axarr[2,1].set_ylabel("Total Loss")
+
+# axarr[2,0].scatter([i for i in range(cEpoch)],rrTracking[:cEpoch])
+# axarr[2,0].set_xlabel("Epoch")
+# axarr[2,0].set_ylabel("(rho*r) of SOC")
+
+# axarr[1,1].plot(XF, decoderModel.Fs.float().cpu().detach()[-1,:],color='orange',alpha=0.5)
+# #axarr[1,1].plot(XF, FsFullRaCAFit[-1,:],color='blue',alpha=0.6)
+# axarr[1,1].set_xlabel("Wavelength [nm]")
+# axarr[1,1].set_ylabel("Reflectance")
+
+# plt.tight_layout()
 plt.show()
 
 # load JSON file with pure spectra

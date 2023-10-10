@@ -1,0 +1,1105 @@
+2023-09-24 21:09:30,505 INFO    StreamThr :3443299 [internal.py:wandb_internal():86] W&B internal server running at pid: 3443299, started at: 2023-09-24 21:09:30.505462
+2023-09-24 21:09:30,506 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status
+2023-09-24 21:09:30,508 INFO    WriterThread:3443299 [datastore.py:open_for_write():85] open: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/run-lj5oo9pk.wandb
+2023-09-24 21:09:30,508 DEBUG   SenderThread:3443299 [sender.py:send():379] send: header
+2023-09-24 21:09:30,508 DEBUG   SenderThread:3443299 [sender.py:send():379] send: run
+2023-09-24 21:09:30,896 INFO    SenderThread:3443299 [dir_watcher.py:__init__():211] watching files in: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files
+2023-09-24 21:09:30,896 INFO    SenderThread:3443299 [sender.py:_start_run_threads():1121] run started: lj5oo9pk with start time 1695604170.505261
+2023-09-24 21:09:30,902 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: check_version
+2023-09-24 21:09:30,902 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: check_version
+2023-09-24 21:09:31,026 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: run_start
+2023-09-24 21:09:31,028 DEBUG   HandlerThread:3443299 [system_info.py:__init__():32] System info init
+2023-09-24 21:09:31,028 DEBUG   HandlerThread:3443299 [system_info.py:__init__():47] System info init done
+2023-09-24 21:09:31,028 INFO    HandlerThread:3443299 [system_monitor.py:start():181] Starting system monitor
+2023-09-24 21:09:31,029 INFO    SystemMonitor:3443299 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-09-24 21:09:31,029 INFO    HandlerThread:3443299 [system_monitor.py:probe():201] Collecting system info
+2023-09-24 21:09:31,029 INFO    SystemMonitor:3443299 [interfaces.py:start():190] Started cpu monitoring
+2023-09-24 21:09:31,030 INFO    SystemMonitor:3443299 [interfaces.py:start():190] Started disk monitoring
+2023-09-24 21:09:31,030 INFO    SystemMonitor:3443299 [interfaces.py:start():190] Started gpu monitoring
+2023-09-24 21:09:31,030 INFO    SystemMonitor:3443299 [interfaces.py:start():190] Started memory monitoring
+2023-09-24 21:09:31,031 INFO    SystemMonitor:3443299 [interfaces.py:start():190] Started network monitoring
+2023-09-24 21:09:31,058 DEBUG   HandlerThread:3443299 [system_info.py:probe():196] Probing system
+2023-09-24 21:09:31,060 DEBUG   HandlerThread:3443299 [system_info.py:_probe_git():181] Probing git
+2023-09-24 21:09:31,063 DEBUG   HandlerThread:3443299 [system_info.py:_probe_git():189] Probing git done
+2023-09-24 21:09:31,063 DEBUG   HandlerThread:3443299 [system_info.py:probe():244] Probing system done
+2023-09-24 21:09:31,063 DEBUG   HandlerThread:3443299 [system_monitor.py:probe():210] {'os': 'Linux-5.15.0-57-generic-x86_64-with-glibc2.35', 'python': '3.10.12', 'heartbeatAt': '2023-09-25T01:09:31.058702', 'startedAt': '2023-09-25T01:09:30.502409', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/train.py', 'codePathLocal': 'train.py', 'codePath': 'RaCA-SOC-a/Step9/train.py', 'git': {'remote': 'https://github.com/eacoleman/RaCA-SOC-a-spectrum-analysis.git', 'commit': 'dc3593ba6c828bf474e458020e9395e7fde7778c'}, 'email': 'sujaynair03@gmail.com', 'root': '/home/sujaynair/RaCA-SOC-a-spectrum-analysis', 'host': 'glasswing', 'username': 'sujaynair', 'executable': '/usr/bin/python3', 'cpu_count': 16, 'cpu_count_logical': 32, 'cpu_freq': {'current': 557.7150624999999, 'min': 400.0, 'max': 5881.0}, 'cpu_freq_per_core': [{'current': 400.0, 'min': 400.0, 'max': 5881.0}, {'current': 400.0, 'min': 400.0, 'max': 5881.0}, {'current': 400.0, 'min': 400.0, 'max': 5881.0}, {'current': 400.0, 'min': 400.0, 'max': 5881.0}, {'current': 400.0, 'min': 400.0, 'max': 5881.0}, {'current': 400.0, 'min': 400.0, 'max': 5881.0}, {'current': 400.0, 'min': 400.0, 'max': 5881.0}, {'current': 400.0, 'min': 400.0, 'max': 5881.0}, {'current': 400.0, 'min': 400.0, 'max': 5881.0}, {'current': 400.0, 'min': 400.0, 'max': 5881.0}, {'current': 400.0, 'min': 400.0, 'max': 5881.0}, {'current': 400.0, 'min': 400.0, 'max': 5881.0}, {'current': 400.0, 'min': 400.0, 'max': 5881.0}, {'current': 400.0, 'min': 400.0, 'max': 5881.0}, {'current': 400.0, 'min': 400.0, 'max': 5881.0}, {'current': 400.0, 'min': 400.0, 'max': 5881.0}, {'current': 400.0, 'min': 400.0, 'max': 5881.0}, {'current': 400.0, 'min': 400.0, 'max': 5881.0}, {'current': 400.0, 'min': 400.0, 'max': 5881.0}, {'current': 400.0, 'min': 400.0, 'max': 5881.0}, {'current': 400.0, 'min': 400.0, 'max': 5881.0}, {'current': 400.0, 'min': 400.0, 'max': 5881.0}, {'current': 400.0, 'min': 400.0, 'max': 5881.0}, {'current': 400.0, 'min': 400.0, 'max': 5881.0}, {'current': 400.0, 'min': 400.0, 'max': 5881.0}, {'current': 400.0, 'min': 400.0, 'max': 5881.0}, {'current': 400.0, 'min': 400.0, 'max': 5881.0}, {'current': 400.0, 'min': 400.0, 'max': 5881.0}, {'current': 400.0, 'min': 400.0, 'max': 5881.0}, {'current': 400.0, 'min': 400.0, 'max': 5881.0}, {'current': 5446.882, 'min': 400.0, 'max': 5881.0}, {'current': 400.0, 'min': 400.0, 'max': 5881.0}], 'disk': {'/': {'total': 915.3232879638672, 'used': 351.65097427368164}}, 'gpu': 'NVIDIA GeForce RTX 4090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4090', 'memory_total': 25757220864}], 'memory': {'total': 124.96323776245117}}
+2023-09-24 21:09:31,063 INFO    HandlerThread:3443299 [system_monitor.py:probe():211] Finished collecting system info
+2023-09-24 21:09:31,063 INFO    HandlerThread:3443299 [system_monitor.py:probe():214] Publishing system info
+2023-09-24 21:09:31,063 DEBUG   HandlerThread:3443299 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-09-24 21:09:31,063 DEBUG   HandlerThread:3443299 [system_info.py:_save_pip():68] Saving pip packages done
+2023-09-24 21:09:31,064 INFO    HandlerThread:3443299 [system_monitor.py:probe():216] Finished publishing system info
+2023-09-24 21:09:31,065 DEBUG   SenderThread:3443299 [sender.py:send():379] send: files
+2023-09-24 21:09:31,065 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-metadata.json with policy now
+2023-09-24 21:09:31,069 DEBUG   SenderThread:3443299 [sender.py:send():379] send: telemetry
+2023-09-24 21:09:31,069 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:09:31,069 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:09:31,160 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:09:31,488 INFO    wandb-upload_0:3443299 [upload_job.py:push():131] Uploaded file /tmp/tmpjr1eer_5wandb/dakpxm8r-wandb-metadata.json
+2023-09-24 21:09:31,897 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_created():271] file/dir created: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/requirements.txt
+2023-09-24 21:09:31,897 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_created():271] file/dir created: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-metadata.json
+2023-09-24 21:09:36,351 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:09:41,352 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:09:46,352 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:09:51,353 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:09:56,354 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:10:01,357 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:10:01,901 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/config.yaml
+2023-09-24 21:10:01,956 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:10:01,956 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:10:01,999 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:10:02,901 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_created():271] file/dir created: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:10:04,424 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:10:04,424 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:10:04,902 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:10:06,602 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:10:11,603 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:10:16,604 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:10:16,921 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:10:19,425 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:10:19,425 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:10:22,543 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:10:27,545 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:10:31,031 DEBUG   SystemMonitor:3443299 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-09-24 21:10:31,032 DEBUG   SenderThread:3443299 [sender.py:send():379] send: stats
+2023-09-24 21:10:31,921 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:10:33,033 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:10:34,425 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:10:34,425 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:10:38,629 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:10:43,629 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:10:48,630 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:10:53,630 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:10:58,631 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:10:59,782 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:10:59,783 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:10:59,783 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:11:01,032 DEBUG   SenderThread:3443299 [sender.py:send():379] send: stats
+2023-09-24 21:11:04,033 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:11:09,034 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:11:14,034 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:11:17,531 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:11:19,743 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:11:20,551 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:11:20,552 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:11:22,919 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:11:23,919 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:11:25,295 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:11:28,757 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:11:28,758 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:11:28,758 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:11:28,758 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:11:28,920 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_created():271] file/dir created: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:11:30,686 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-24 21:11:30,687 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:11:30,687 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:11:30,687 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:11:30,921 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:11:31,033 DEBUG   SenderThread:3443299 [sender.py:send():379] send: stats
+2023-09-24 21:11:36,034 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:11:36,723 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:11:36,724 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:11:36,724 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:11:36,724 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:11:36,922 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:11:38,922 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:11:41,724 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:11:42,879 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:11:42,880 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:11:42,880 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:11:42,880 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:11:42,924 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:11:44,923 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:11:45,686 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:11:45,687 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:11:45,687 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:11:46,899 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:11:50,591 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:11:50,592 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:11:50,592 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:11:50,592 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:11:50,925 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:11:52,593 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:11:52,925 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:11:57,217 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:11:57,218 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:11:57,218 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:11:57,218 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:11:57,926 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:11:58,218 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:11:58,926 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:12:00,686 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:12:00,687 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:12:00,687 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:12:01,034 DEBUG   SenderThread:3443299 [sender.py:send():379] send: stats
+2023-09-24 21:12:04,034 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:12:04,143 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:12:04,144 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:12:04,144 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:12:04,144 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:12:04,928 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:12:06,928 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:12:09,144 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:12:11,894 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:12:11,895 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:12:11,895 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:12:11,895 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:12:11,929 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:12:14,896 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:12:14,930 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:12:15,686 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:12:15,687 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:12:15,687 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:12:19,659 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:12:19,660 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:12:19,660 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:12:19,660 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:12:19,931 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:12:20,660 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:12:20,931 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:12:25,299 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:12:25,299 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:12:25,299 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:12:25,300 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:12:25,932 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:12:26,301 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:12:26,933 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:12:30,687 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:12:30,687 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:12:30,687 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:12:31,034 DEBUG   SenderThread:3443299 [sender.py:send():379] send: stats
+2023-09-24 21:12:32,035 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:12:32,247 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:12:32,248 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:12:32,248 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:12:32,248 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:12:32,934 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:12:34,934 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:12:37,248 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:12:40,084 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:12:40,084 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:12:40,084 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:12:40,085 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:12:40,936 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:12:42,936 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:12:43,086 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:12:45,687 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:12:45,687 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:12:45,687 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:12:47,435 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:12:47,436 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:12:47,436 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:12:47,436 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:12:47,937 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:12:48,436 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:12:48,937 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:12:53,437 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:12:54,981 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:12:54,981 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:12:54,981 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:12:54,982 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:12:55,939 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:12:56,939 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:12:58,983 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:13:00,687 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:13:00,687 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:13:00,687 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:13:01,035 DEBUG   SenderThread:3443299 [sender.py:send():379] send: stats
+2023-09-24 21:13:02,463 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:13:02,463 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:13:02,463 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:13:02,463 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:13:02,940 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:13:04,464 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:13:04,941 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:13:08,060 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:13:08,060 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:13:08,060 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:13:08,061 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:13:08,942 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:13:10,062 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:13:10,942 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:13:15,062 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:13:15,687 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:13:15,687 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:13:15,687 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:13:16,011 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:13:16,012 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:13:16,012 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:13:16,012 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:13:16,943 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:13:18,944 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:13:21,013 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:13:22,797 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:13:22,798 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:13:22,798 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:13:22,798 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:13:22,945 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:13:24,945 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:13:26,799 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:13:30,384 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:13:30,385 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:13:30,385 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:13:30,385 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:13:30,688 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:13:30,688 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:13:30,688 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:13:30,947 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:13:31,035 DEBUG   SenderThread:3443299 [sender.py:send():379] send: stats
+2023-09-24 21:13:32,036 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:13:32,947 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:13:37,036 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:13:37,475 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:13:37,475 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:13:37,475 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:13:37,476 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:13:37,948 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:13:38,948 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:13:42,476 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:13:43,863 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:13:43,863 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:13:43,864 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:13:43,865 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:13:43,949 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:13:45,687 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:13:45,687 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:13:45,688 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:13:46,950 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:13:47,869 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:13:49,232 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:13:49,232 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:13:49,232 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:13:49,232 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:13:49,951 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:13:50,951 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:13:53,233 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:13:55,904 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:13:55,905 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:13:55,905 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:13:55,905 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:13:55,952 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:13:58,906 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:13:58,953 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:14:00,687 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:14:00,688 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:14:00,696 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:14:01,036 DEBUG   SenderThread:3443299 [sender.py:send():379] send: stats
+2023-09-24 21:14:02,953 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:14:02,953 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:14:02,954 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:14:02,954 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:14:02,954 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:14:03,955 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:14:04,955 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:14:08,955 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:14:10,219 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:14:10,220 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:14:10,220 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:14:10,220 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:14:10,956 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:14:12,956 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:14:14,221 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:14:15,687 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:14:15,688 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:14:15,688 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:14:17,279 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:14:17,280 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:14:17,280 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:14:17,280 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:14:17,957 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:14:18,958 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:14:19,281 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:14:24,281 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:14:24,880 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:14:24,880 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:14:24,881 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:14:24,881 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:14:24,959 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:14:26,959 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:14:29,882 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:14:30,687 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:14:30,688 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:14:30,688 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:14:31,036 DEBUG   SenderThread:3443299 [sender.py:send():379] send: stats
+2023-09-24 21:14:32,561 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:14:32,561 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:14:32,562 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:14:32,562 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:14:32,960 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:14:34,961 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:14:35,562 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:14:39,941 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:14:39,941 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:14:39,942 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:14:39,942 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:14:39,962 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:14:40,942 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:14:42,963 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:14:45,688 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:14:45,688 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:14:45,688 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:14:46,156 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:14:46,156 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:14:46,156 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:14:46,157 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:14:46,157 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:14:46,964 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:14:48,964 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:14:51,158 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:14:51,790 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:14:51,790 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:14:51,790 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:14:51,791 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:14:51,965 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:14:52,965 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:14:56,791 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:14:58,257 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:14:58,258 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:14:58,258 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:14:58,259 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:14:58,966 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:15:00,688 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:15:00,688 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:15:00,688 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:15:00,967 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:15:01,052 DEBUG   SenderThread:3443299 [sender.py:send():379] send: stats
+2023-09-24 21:15:02,052 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:15:06,120 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:15:06,121 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:15:06,121 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:15:06,121 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:15:06,968 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:15:07,121 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:15:08,968 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:15:12,122 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:15:13,710 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:15:13,711 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:15:13,711 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:15:13,711 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:15:13,969 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:15:14,969 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:15:15,688 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:15:15,688 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:15:15,688 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:15:17,889 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:15:19,613 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:15:19,614 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:15:19,614 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:15:19,614 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:15:19,970 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:15:20,970 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:15:23,614 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:15:26,073 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:15:26,073 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:15:26,073 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:15:26,073 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:15:26,972 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:15:28,972 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:15:29,074 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:15:30,688 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:15:30,688 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:15:30,688 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:15:31,037 DEBUG   SenderThread:3443299 [sender.py:send():379] send: stats
+2023-09-24 21:15:33,408 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:15:33,409 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:15:33,409 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:15:33,409 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:15:33,973 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:15:34,409 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:15:34,973 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:15:39,410 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:15:40,792 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:15:40,792 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:15:40,792 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:15:40,792 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:15:40,975 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:15:42,975 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:15:44,793 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:15:45,688 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:15:45,688 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:15:45,689 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:15:47,982 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:15:47,983 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:15:47,983 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:15:47,983 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:15:48,976 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:15:49,984 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:15:50,977 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:15:54,700 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:15:54,700 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:15:54,700 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:15:54,701 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:15:54,978 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:15:55,701 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:15:56,978 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:15:59,973 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:15:59,973 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:15:59,973 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:15:59,974 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:15:59,979 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:16:00,688 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:16:00,688 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:16:00,689 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:16:00,799 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:16:00,979 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:16:01,038 DEBUG   SenderThread:3443299 [sender.py:send():379] send: stats
+2023-09-24 21:16:06,039 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:16:07,782 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:16:07,782 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:16:07,782 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:16:07,782 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:16:07,981 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:16:08,981 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:16:11,783 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:16:13,845 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:16:13,845 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:16:13,845 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:16:13,845 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:16:13,982 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:16:14,982 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:16:15,688 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:16:15,688 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:16:15,697 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:16:16,794 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:16:19,461 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:16:19,462 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:16:19,462 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:16:19,462 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:16:19,983 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:16:20,983 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:16:22,462 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:16:24,896 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:16:24,896 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:16:24,896 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:16:24,897 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:16:24,984 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:16:26,985 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:16:27,897 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:16:30,688 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:16:30,689 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:16:30,689 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:16:31,038 DEBUG   SenderThread:3443299 [sender.py:send():379] send: stats
+2023-09-24 21:16:32,173 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:16:32,173 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:16:32,173 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:16:32,173 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:16:32,986 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:16:33,174 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:16:34,987 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:16:38,174 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:16:38,685 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:16:38,686 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:16:38,686 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:16:38,686 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:16:38,987 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:16:40,988 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:16:43,687 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:16:44,696 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:16:44,696 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:16:44,696 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:16:44,696 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:16:44,989 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:16:45,688 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:16:45,689 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:16:45,689 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:16:46,989 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:16:48,885 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:16:49,993 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:16:49,994 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:16:49,994 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:16:49,994 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:16:50,990 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:16:50,990 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:16:53,995 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:16:57,837 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:16:57,837 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:16:57,838 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:16:57,838 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:16:57,991 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:16:58,992 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:16:59,838 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:17:00,689 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:17:00,689 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:17:00,689 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:17:01,039 DEBUG   SenderThread:3443299 [sender.py:send():379] send: stats
+2023-09-24 21:17:05,040 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:17:05,185 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:17:05,186 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:17:05,186 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:17:05,186 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:17:05,993 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:17:06,993 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:17:10,187 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:17:13,383 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:17:13,383 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:17:13,383 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:17:13,383 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:17:13,995 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:17:14,995 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:17:15,384 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:17:15,689 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:17:15,689 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:17:15,689 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:17:20,862 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:17:21,113 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:17:21,114 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:17:21,114 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:17:21,114 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:17:21,997 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:17:22,997 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:17:26,115 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:17:27,305 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:17:27,306 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:17:27,306 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:17:27,306 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:17:27,998 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:17:28,998 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:17:30,689 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:17:30,689 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:17:30,689 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:17:31,039 DEBUG   SenderThread:3443299 [sender.py:send():379] send: stats
+2023-09-24 21:17:32,040 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:17:34,868 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:17:34,869 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:17:34,869 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:17:34,869 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:17:35,000 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:17:37,000 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:17:37,870 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:17:41,994 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:17:41,994 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:17:41,994 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:17:41,995 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:17:42,001 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:17:42,995 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:17:43,001 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:17:45,689 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:17:45,689 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:17:45,689 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:17:48,416 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:17:48,416 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:17:48,416 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:17:48,416 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:17:48,417 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:17:49,003 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:17:51,003 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:17:53,417 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:17:55,908 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:17:55,908 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:17:55,909 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:17:55,909 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:17:56,004 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:17:57,004 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:17:58,909 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:18:00,689 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:18:00,689 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:18:00,690 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:18:01,040 DEBUG   SenderThread:3443299 [sender.py:send():379] send: stats
+2023-09-24 21:18:02,899 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:18:02,900 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:18:02,900 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:18:02,900 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:18:03,006 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:18:04,900 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:18:05,006 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:18:09,901 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:18:10,448 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:18:10,449 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:18:10,449 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:18:10,449 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:18:11,007 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:18:13,007 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:18:15,450 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:18:15,689 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:18:15,689 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:18:15,690 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:18:17,458 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:18:17,458 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:18:17,459 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:18:17,459 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:18:18,009 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:18:19,009 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:18:20,459 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:18:23,987 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:18:23,988 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:18:23,988 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:18:23,988 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:18:24,010 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:18:25,010 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:18:25,988 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:18:30,689 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:18:30,689 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:18:30,690 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:18:30,867 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:18:30,867 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:18:30,868 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:18:30,868 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:18:31,011 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:18:31,040 DEBUG   SenderThread:3443299 [sender.py:send():379] send: stats
+2023-09-24 21:18:31,042 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:18:33,012 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:18:36,042 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:18:38,559 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:18:38,560 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:18:38,560 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:18:38,560 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:18:39,013 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:18:41,013 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:18:41,561 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:18:45,689 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:18:45,690 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:18:45,690 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:18:46,234 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:18:46,235 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:18:46,235 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:18:46,235 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:18:47,015 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:18:47,236 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:18:49,015 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:18:52,236 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:18:53,655 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:18:53,655 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:18:53,655 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:18:53,656 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:18:54,016 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:18:55,016 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:18:57,656 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:19:00,551 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:19:00,551 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:19:00,552 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:19:00,552 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:19:00,749 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:19:00,787 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:19:00,787 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:19:01,018 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:19:01,041 DEBUG   SenderThread:3443299 [sender.py:send():379] send: stats
+2023-09-24 21:19:03,018 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:19:03,042 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:19:07,835 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:19:07,851 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:19:07,851 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:19:07,851 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:19:08,019 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:19:08,851 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:19:09,019 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:19:13,852 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:19:14,396 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:19:14,396 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:19:14,396 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:19:14,397 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:19:15,021 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:19:15,711 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:19:15,711 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:19:15,712 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:19:17,021 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:19:18,872 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:19:19,727 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:19:19,728 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:19:19,728 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:19:19,728 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:19:20,022 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:19:21,022 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:19:24,729 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:19:24,947 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:19:24,947 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:19:24,948 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:19:24,948 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:19:25,023 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:19:27,023 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:19:29,949 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:19:30,711 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:19:30,712 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:19:30,712 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:19:31,042 DEBUG   SenderThread:3443299 [sender.py:send():379] send: stats
+2023-09-24 21:19:31,979 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:19:31,980 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:19:31,980 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:19:31,980 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:19:32,024 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:19:33,024 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:19:34,980 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:19:37,108 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:19:37,108 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:19:37,108 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:19:37,109 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:19:38,025 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:19:39,026 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:19:40,109 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:19:44,125 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:19:44,125 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:19:44,126 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:19:44,126 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:19:45,027 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:19:45,027 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:19:45,126 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:19:45,711 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:19:45,711 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:19:45,712 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:19:50,845 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:19:51,071 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:19:51,072 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:19:51,072 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:19:51,072 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:19:52,028 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:19:53,029 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:19:56,072 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:19:59,030 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:19:59,031 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:19:59,031 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:19:59,031 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:20:00,030 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:20:00,711 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:20:00,712 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:20:00,712 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:20:01,030 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:20:01,042 DEBUG   SenderThread:3443299 [sender.py:send():379] send: stats
+2023-09-24 21:20:02,043 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:20:05,091 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:20:05,092 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:20:05,092 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:20:05,092 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:20:06,031 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:20:07,031 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:20:07,092 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:20:10,954 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:20:10,954 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:20:10,954 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:20:10,955 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:20:11,032 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:20:12,955 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:20:13,033 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:20:15,712 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:20:15,712 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:20:15,713 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:20:17,127 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:20:17,128 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:20:17,128 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:20:17,128 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:20:18,034 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:20:18,128 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:20:19,034 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:20:23,129 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:20:24,559 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:20:24,559 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:20:24,559 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:20:24,560 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:20:25,035 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:20:27,036 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:20:28,560 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:20:29,785 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:20:29,786 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:20:29,786 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:20:29,786 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:20:30,036 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:20:30,711 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:20:30,712 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:20:30,712 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:20:31,037 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:20:31,043 DEBUG   SenderThread:3443299 [sender.py:send():379] send: stats
+2023-09-24 21:20:34,043 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:20:36,675 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:20:36,676 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:20:36,676 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:20:36,676 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:20:37,038 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:20:39,038 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:20:39,677 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:20:44,082 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:20:44,083 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:20:44,083 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:20:44,083 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:20:45,039 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:20:45,040 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:20:45,083 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:20:45,712 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:20:45,712 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:20:45,712 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:20:50,857 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:20:50,991 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:20:50,992 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:20:50,992 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:20:50,992 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:20:51,041 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:20:53,041 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:20:55,993 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:20:56,446 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:20:56,446 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:20:56,447 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:20:56,447 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:20:57,042 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:20:59,042 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:21:00,712 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:21:00,712 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:21:00,721 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:21:01,043 DEBUG   SenderThread:3443299 [sender.py:send():379] send: stats
+2023-09-24 21:21:01,044 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:21:02,267 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:21:02,268 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:21:02,268 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:21:02,268 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:21:03,044 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:21:03,044 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:21:06,269 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:21:07,856 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:21:07,856 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:21:07,856 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:21:07,857 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:21:08,045 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:21:09,045 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:21:11,857 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:21:15,209 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:21:15,210 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:21:15,210 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:21:15,210 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:21:15,712 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:21:15,712 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:21:15,713 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:21:16,047 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:21:17,047 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:21:17,834 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:21:22,835 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:21:23,178 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:21:23,178 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:21:23,178 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:21:23,178 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:21:24,048 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:21:25,049 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:21:28,179 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:21:30,670 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:21:30,670 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:21:30,671 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:21:30,671 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:21:30,821 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:21:30,821 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:21:30,895 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:21:31,043 DEBUG   SenderThread:3443299 [sender.py:send():379] send: stats
+2023-09-24 21:21:31,050 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:21:33,050 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:21:34,044 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:21:36,243 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:21:36,243 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:21:36,244 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:21:36,244 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:21:37,051 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:21:37,051 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:21:39,244 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:21:43,279 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:21:43,279 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:21:43,280 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:21:43,280 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:21:44,052 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:21:44,280 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:21:45,053 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:21:45,783 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:21:45,784 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:21:45,784 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:21:49,879 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:21:50,370 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:21:50,371 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:21:50,371 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:21:50,371 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:21:51,054 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:21:53,054 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:21:55,372 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:21:55,852 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:21:55,852 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:21:55,852 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:21:55,853 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:21:56,055 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:21:57,055 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:22:00,746 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:22:00,783 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:22:00,783 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:22:00,784 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:22:01,044 DEBUG   SenderThread:3443299 [sender.py:send():379] send: stats
+2023-09-24 21:22:02,135 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:22:02,135 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:22:02,135 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:22:02,136 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:22:03,056 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:22:03,056 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:22:06,136 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:22:09,726 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:22:09,727 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:22:09,727 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:22:09,727 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:22:10,058 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:22:11,058 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:22:11,727 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:22:15,783 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:22:15,784 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:22:15,784 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:22:15,939 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:22:15,941 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:22:15,941 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:22:15,942 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:22:16,059 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:22:16,942 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:22:17,059 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:22:21,943 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:22:22,955 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:22:22,956 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:22:22,956 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:22:22,956 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:22:23,060 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:22:25,061 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:22:26,956 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:22:28,545 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:22:28,545 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:22:28,545 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:22:28,546 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:22:29,062 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:22:30,783 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:22:30,784 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-24 21:22:30,784 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: stop_status
+2023-09-24 21:22:31,044 DEBUG   SenderThread:3443299 [sender.py:send():379] send: stats
+2023-09-24 21:22:31,062 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:22:32,045 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:22:36,519 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:22:36,519 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:22:36,519 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:22:36,520 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:22:37,063 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:22:37,521 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:22:39,064 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:22:42,521 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:22:42,596 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-24 21:22:42,597 DEBUG   SenderThread:3443299 [sender.py:send():379] send: history
+2023-09-24 21:22:42,597 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: summary_record
+2023-09-24 21:22:42,597 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:22:42,597 DEBUG   SenderThread:3443299 [sender.py:send():379] send: telemetry
+2023-09-24 21:22:42,597 DEBUG   SenderThread:3443299 [sender.py:send():379] send: exit
+2023-09-24 21:22:42,597 INFO    SenderThread:3443299 [sender.py:send_exit():584] handling exit code: 0
+2023-09-24 21:22:42,597 INFO    SenderThread:3443299 [sender.py:send_exit():586] handling runtime: 791
+2023-09-24 21:22:42,606 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:22:42,606 INFO    SenderThread:3443299 [sender.py:send_exit():592] send defer
+2023-09-24 21:22:42,606 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: defer
+2023-09-24 21:22:42,606 INFO    HandlerThread:3443299 [handler.py:handle_request_defer():170] handle defer: 0
+2023-09-24 21:22:42,606 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: defer
+2023-09-24 21:22:42,606 INFO    SenderThread:3443299 [sender.py:send_request_defer():608] handle sender defer: 0
+2023-09-24 21:22:42,606 INFO    SenderThread:3443299 [sender.py:transition_state():612] send defer: 1
+2023-09-24 21:22:42,606 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: defer
+2023-09-24 21:22:42,606 INFO    HandlerThread:3443299 [handler.py:handle_request_defer():170] handle defer: 1
+2023-09-24 21:22:42,606 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: defer
+2023-09-24 21:22:42,607 INFO    SenderThread:3443299 [sender.py:send_request_defer():608] handle sender defer: 1
+2023-09-24 21:22:42,607 INFO    SenderThread:3443299 [sender.py:transition_state():612] send defer: 2
+2023-09-24 21:22:42,607 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: defer
+2023-09-24 21:22:42,607 INFO    HandlerThread:3443299 [handler.py:handle_request_defer():170] handle defer: 2
+2023-09-24 21:22:42,607 INFO    HandlerThread:3443299 [system_monitor.py:finish():190] Stopping system monitor
+2023-09-24 21:22:42,607 DEBUG   SystemMonitor:3443299 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-09-24 21:22:42,607 INFO    HandlerThread:3443299 [interfaces.py:finish():202] Joined cpu monitor
+2023-09-24 21:22:42,607 DEBUG   SystemMonitor:3443299 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-09-24 21:22:42,607 INFO    HandlerThread:3443299 [interfaces.py:finish():202] Joined disk monitor
+2023-09-24 21:22:42,652 INFO    HandlerThread:3443299 [interfaces.py:finish():202] Joined gpu monitor
+2023-09-24 21:22:42,652 INFO    HandlerThread:3443299 [interfaces.py:finish():202] Joined memory monitor
+2023-09-24 21:22:42,652 INFO    HandlerThread:3443299 [interfaces.py:finish():202] Joined network monitor
+2023-09-24 21:22:42,653 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: defer
+2023-09-24 21:22:42,653 INFO    SenderThread:3443299 [sender.py:send_request_defer():608] handle sender defer: 2
+2023-09-24 21:22:42,653 INFO    SenderThread:3443299 [sender.py:transition_state():612] send defer: 3
+2023-09-24 21:22:42,653 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: defer
+2023-09-24 21:22:42,653 INFO    HandlerThread:3443299 [handler.py:handle_request_defer():170] handle defer: 3
+2023-09-24 21:22:42,653 DEBUG   SenderThread:3443299 [sender.py:send():379] send: stats
+2023-09-24 21:22:42,653 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: defer
+2023-09-24 21:22:42,653 INFO    SenderThread:3443299 [sender.py:send_request_defer():608] handle sender defer: 3
+2023-09-24 21:22:42,653 INFO    SenderThread:3443299 [sender.py:transition_state():612] send defer: 4
+2023-09-24 21:22:42,653 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: defer
+2023-09-24 21:22:42,653 INFO    HandlerThread:3443299 [handler.py:handle_request_defer():170] handle defer: 4
+2023-09-24 21:22:42,653 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: defer
+2023-09-24 21:22:42,653 INFO    SenderThread:3443299 [sender.py:send_request_defer():608] handle sender defer: 4
+2023-09-24 21:22:42,653 INFO    SenderThread:3443299 [sender.py:transition_state():612] send defer: 5
+2023-09-24 21:22:42,653 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: defer
+2023-09-24 21:22:42,653 INFO    HandlerThread:3443299 [handler.py:handle_request_defer():170] handle defer: 5
+2023-09-24 21:22:42,654 DEBUG   SenderThread:3443299 [sender.py:send():379] send: summary
+2023-09-24 21:22:42,654 INFO    SenderThread:3443299 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-24 21:22:42,654 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: defer
+2023-09-24 21:22:42,654 INFO    SenderThread:3443299 [sender.py:send_request_defer():608] handle sender defer: 5
+2023-09-24 21:22:42,654 INFO    SenderThread:3443299 [sender.py:transition_state():612] send defer: 6
+2023-09-24 21:22:42,654 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: defer
+2023-09-24 21:22:42,654 INFO    HandlerThread:3443299 [handler.py:handle_request_defer():170] handle defer: 6
+2023-09-24 21:22:42,654 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: defer
+2023-09-24 21:22:42,654 INFO    SenderThread:3443299 [sender.py:send_request_defer():608] handle sender defer: 6
+2023-09-24 21:22:42,656 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:22:42,779 INFO    SenderThread:3443299 [sender.py:transition_state():612] send defer: 7
+2023-09-24 21:22:42,779 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: defer
+2023-09-24 21:22:42,779 INFO    HandlerThread:3443299 [handler.py:handle_request_defer():170] handle defer: 7
+2023-09-24 21:22:42,779 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: defer
+2023-09-24 21:22:42,779 INFO    SenderThread:3443299 [sender.py:send_request_defer():608] handle sender defer: 7
+2023-09-24 21:22:43,065 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:22:43,065 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/config.yaml
+2023-09-24 21:22:43,597 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: poll_exit
+2023-09-24 21:22:45,065 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:22:45,976 INFO    SenderThread:3443299 [sender.py:transition_state():612] send defer: 8
+2023-09-24 21:22:45,976 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: poll_exit
+2023-09-24 21:22:45,976 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: defer
+2023-09-24 21:22:45,976 INFO    HandlerThread:3443299 [handler.py:handle_request_defer():170] handle defer: 8
+2023-09-24 21:22:45,976 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: defer
+2023-09-24 21:22:45,976 INFO    SenderThread:3443299 [sender.py:send_request_defer():608] handle sender defer: 8
+2023-09-24 21:22:45,976 INFO    SenderThread:3443299 [job_builder.py:build():281] Attempting to build job artifact
+2023-09-24 21:22:45,977 INFO    SenderThread:3443299 [job_builder.py:_get_source_type():393] is repo sourced job
+2023-09-24 21:22:45,978 INFO    SenderThread:3443299 [job_builder.py:build():369] adding wandb-job metadata file
+2023-09-24 21:22:45,994 INFO    SenderThread:3443299 [sender.py:transition_state():612] send defer: 9
+2023-09-24 21:22:45,994 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: defer
+2023-09-24 21:22:45,994 INFO    HandlerThread:3443299 [handler.py:handle_request_defer():170] handle defer: 9
+2023-09-24 21:22:45,994 DEBUG   SenderThread:3443299 [sender.py:send():379] send: artifact
+2023-09-24 21:22:46,065 INFO    Thread-12 :3443299 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:22:46,650 INFO    SenderThread:3443299 [sender.py:send_artifact():1453] sent artifact job-https___github.com_eacoleman_RaCA-SOC-a-spectrum-analysis.git_RaCA-SOC-a_Step9_train.py - {'id': 'QXJ0aWZhY3Q6NTgyMTgzMDYx', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjk5NDU0NDkx', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NTgyMjExNzY5', 'versionIndex': 10}}}
+2023-09-24 21:22:46,650 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: defer
+2023-09-24 21:22:46,650 INFO    SenderThread:3443299 [sender.py:send_request_defer():608] handle sender defer: 9
+2023-09-24 21:22:46,650 INFO    SenderThread:3443299 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-09-24 21:22:47,066 INFO    SenderThread:3443299 [dir_watcher.py:finish():388] scan: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files
+2023-09-24 21:22:47,066 INFO    SenderThread:3443299 [dir_watcher.py:finish():402] scan save: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-metadata.json wandb-metadata.json
+2023-09-24 21:22:47,066 INFO    SenderThread:3443299 [dir_watcher.py:finish():402] scan save: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/config.yaml config.yaml
+2023-09-24 21:22:47,066 INFO    SenderThread:3443299 [dir_watcher.py:finish():402] scan save: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/requirements.txt requirements.txt
+2023-09-24 21:22:47,067 INFO    SenderThread:3443299 [dir_watcher.py:finish():402] scan save: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log output.log
+2023-09-24 21:22:47,067 INFO    SenderThread:3443299 [dir_watcher.py:finish():402] scan save: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json wandb-summary.json
+2023-09-24 21:22:47,067 INFO    SenderThread:3443299 [sender.py:transition_state():612] send defer: 10
+2023-09-24 21:22:47,067 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: defer
+2023-09-24 21:22:47,068 INFO    HandlerThread:3443299 [handler.py:handle_request_defer():170] handle defer: 10
+2023-09-24 21:22:47,071 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: defer
+2023-09-24 21:22:47,071 INFO    SenderThread:3443299 [sender.py:send_request_defer():608] handle sender defer: 10
+2023-09-24 21:22:47,071 INFO    SenderThread:3443299 [file_pusher.py:finish():175] shutting down file pusher
+2023-09-24 21:22:47,422 INFO    wandb-upload_0:3443299 [upload_job.py:push():131] Uploaded file /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/config.yaml
+2023-09-24 21:22:47,562 INFO    wandb-upload_3:3443299 [upload_job.py:push():131] Uploaded file /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/wandb-summary.json
+2023-09-24 21:22:47,576 INFO    wandb-upload_1:3443299 [upload_job.py:push():131] Uploaded file /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/requirements.txt
+2023-09-24 21:22:48,071 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: status_report
+2023-09-24 21:22:48,382 INFO    wandb-upload_2:3443299 [upload_job.py:push():131] Uploaded file /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/files/output.log
+2023-09-24 21:22:48,583 INFO    Thread-11 (_thread_body):3443299 [sender.py:transition_state():612] send defer: 11
+2023-09-24 21:22:48,583 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: defer
+2023-09-24 21:22:48,583 INFO    HandlerThread:3443299 [handler.py:handle_request_defer():170] handle defer: 11
+2023-09-24 21:22:48,583 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: defer
+2023-09-24 21:22:48,583 INFO    SenderThread:3443299 [sender.py:send_request_defer():608] handle sender defer: 11
+2023-09-24 21:22:48,583 INFO    SenderThread:3443299 [file_pusher.py:join():181] waiting for file pusher
+2023-09-24 21:22:48,583 INFO    SenderThread:3443299 [sender.py:transition_state():612] send defer: 12
+2023-09-24 21:22:48,583 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: defer
+2023-09-24 21:22:48,583 INFO    HandlerThread:3443299 [handler.py:handle_request_defer():170] handle defer: 12
+2023-09-24 21:22:48,584 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: defer
+2023-09-24 21:22:48,584 INFO    SenderThread:3443299 [sender.py:send_request_defer():608] handle sender defer: 12
+2023-09-24 21:22:48,584 INFO    SenderThread:3443299 [file_stream.py:finish():594] file stream finish called
+2023-09-24 21:22:48,598 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-24 21:22:48,873 INFO    SenderThread:3443299 [file_stream.py:finish():598] file stream finish is done
+2023-09-24 21:22:48,873 INFO    SenderThread:3443299 [sender.py:transition_state():612] send defer: 13
+2023-09-24 21:22:48,873 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: defer
+2023-09-24 21:22:48,873 INFO    HandlerThread:3443299 [handler.py:handle_request_defer():170] handle defer: 13
+2023-09-24 21:22:48,873 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: defer
+2023-09-24 21:22:48,873 INFO    SenderThread:3443299 [sender.py:send_request_defer():608] handle sender defer: 13
+2023-09-24 21:22:48,873 INFO    SenderThread:3443299 [sender.py:transition_state():612] send defer: 14
+2023-09-24 21:22:48,873 DEBUG   SenderThread:3443299 [sender.py:send():379] send: final
+2023-09-24 21:22:48,873 DEBUG   SenderThread:3443299 [sender.py:send():379] send: footer
+2023-09-24 21:22:48,874 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: defer
+2023-09-24 21:22:48,874 INFO    HandlerThread:3443299 [handler.py:handle_request_defer():170] handle defer: 14
+2023-09-24 21:22:48,874 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: defer
+2023-09-24 21:22:48,874 INFO    SenderThread:3443299 [sender.py:send_request_defer():608] handle sender defer: 14
+2023-09-24 21:22:48,874 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-24 21:22:48,875 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: poll_exit
+2023-09-24 21:22:48,875 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: poll_exit
+2023-09-24 21:22:48,875 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: server_info
+2023-09-24 21:22:48,875 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: get_summary
+2023-09-24 21:22:48,876 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: sampled_history
+2023-09-24 21:22:48,876 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: job_info
+2023-09-24 21:22:48,877 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: server_info
+2023-09-24 21:22:48,953 DEBUG   SenderThread:3443299 [sender.py:send_request():406] send_request: job_info
+2023-09-24 21:22:48,954 DEBUG   HandlerThread:3443299 [handler.py:handle_request():144] handle_request: shutdown
+2023-09-24 21:22:48,954 INFO    HandlerThread:3443299 [handler.py:finish():840] shutting down handler
+2023-09-24 21:22:49,877 INFO    WriterThread:3443299 [datastore.py:close():294] close: /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20230924_210930-lj5oo9pk/run-lj5oo9pk.wandb
+2023-09-24 21:22:49,954 INFO    SenderThread:3443299 [sender.py:finish():1531] shutting down sender
+2023-09-24 21:22:49,954 INFO    SenderThread:3443299 [file_pusher.py:finish():175] shutting down file pusher
+2023-09-24 21:22:49,954 INFO    SenderThread:3443299 [file_pusher.py:join():181] waiting for file pusher

@@ -182,15 +182,15 @@ trrsoc   = torch.tensor(seedSOCrr)
 
 # empirical data: (SOC values, reflectances, and max normalized reflectance)
 ys = (tmsoc,torch.tensor(dataI[dataIndices].tolist()),torch.tensor([]))
-pdb.set_trace()
-nepochs = 1000 #usually 10000
+# pdb.set_trace()
+nepochs = 10000 #usually 10000
 model = LinearMixingModel(tF,tFsoc,tseedMs,trhorads,trrsoc,nepochs)
 optimizer = optim.Adam(model.parameters(), lr = 0.00002, betas=(0.99,0.999))
 
-pdb.set_trace()
+# pdb.set_trace()
 with open('Step5FULLMODEL.pkl', 'wb') as file:
         pickle.dump((model,optimizer,F,seedFsoc,trueFsoc,seedMs,dataIndices,msoc,rhorads,seedSOCrr,trueSOCrr), file)
-pdb.set_trace()
+# pdb.set_trace()
 # X_train, X_val, y_train, y_val = train_test_split(dataI, msoc, test_size=0.2, random_state=42)
 
 def validate(model, X_val, y_val):
@@ -221,15 +221,60 @@ for epoch in tqdm(range(nepochs)) :
     optimizer.zero_grad()
 
 
+## PLOT 1 HERE
+
+# Assuming XF, model.fsoc, seedFsoc, and trueFsoc are your data
+# You can use plt.figure to create a new figure for this plot
+plt.figure(figsize=(12, 8))  # Increase the figure size
+plt.gca().set_facecolor('white')
+plt.plot(XF, model.fsoc.detach().numpy(), 'blue', label='Predicted $f_{SOC}(\lambda)$')
+plt.plot(XF, seedFsoc, 'gray', linestyle='--', label='Seed $f_{SOC}(\lambda)$')  # Grey and dashed line
+# plt.plot(XF, trueFsoc, 'orange', label='True Fsoc')
+
+# Add title and labels with LaTeX
+# plt.title('SOC Spectra', fontsize=24)  # Increase title font size
+plt.xlabel('Wavelength [nm]', fontsize=20)  # Increase x-label font size
+plt.ylabel('Reflectance', fontsize=20)  # Increase y-label font size
+
+# Set y-limit minimum to 0
+plt.ylim(0, None)
+
+# Add gridlines
+plt.grid(True)
+
+plt.legend(fontsize=16)  # Increase legend font size
+
+# Save the figure as an image
+plt.savefig('Plot1_FINALFINAL')
+
+plt.show()
 
 
+# # Assuming XF, model.fsoc, seedFsoc, and trueFsoc are your data
+# # You can use plt.figure to create a new figure for this plot
+# plt.figure(figsize=(12, 8))  # Increase the figure size
+# plt.gca().set_facecolor('white')
+# plt.plot(XF, model.fsoc.detach().numpy(), 'red', label='Predicted $f_{SOC}(\lambda)$')
+# plt.plot(XF, seedFsoc, 'black', linestyle='--', label='Seed $f_{SOC}(\lambda)$')  # Grey and dashed line
+# # plt.plot(XF, trueFsoc, 'orange', label='True Fsoc')
 
+# # Add title and labels with LaTeX
+# plt.title('SOC Spectra', fontsize=24)  # Increase title font size
+# plt.xlabel('Wavelength [nm]', fontsize=20)  # Increase x-label font size
+# plt.ylabel('Reflectance', fontsize=20)  # Increase y-label font size
 
-plt.plot(XF,model.fsoc.detach().numpy(),'black')
-plt.plot(XF,seedFsoc,'blue')
-plt.plot(XF,trueFsoc,'orange')
-plt.savefig('7Fsocs_FULL')
-print(model.rrsoc.detach().item(),seedSOCrr[0],trueSOCrr)
+# # Set y-limit minimum to 0
+# plt.ylim(0, None)
+
+# # Add gridlines
+# plt.grid(True)
+
+# plt.legend(fontsize=12)  # Increase legend font size
+
+# # Save the figure as an image
+# plt.savefig('Plot1_FINALFINAL')
+
+# plt.show()
 
 
 _, axarr = plt.subplots(3,2,figsize=(10,15))

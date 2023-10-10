@@ -1,0 +1,1 @@
+{"Encoder_Training Loss": 17.391387939453125, "Decoder_Training Loss": 3.1614904403686523, "_timestamp": 1695602955.310034, "_runtime": 0.7809929847717285, "_step": 3, "Encoder_Validation Loss": 10.570130348205566, "Decoder_Validation Loss": 0.09227193892002106, "_wandb": {"runtime": 0}}
