@@ -1,0 +1,19 @@
+
+Loaded txt
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 123, in <module>
+    encoder_model = EncoderTransformer(MSpectra, KEndmembers, 512, 8, 8)
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/models.py", line 33, in __init__
+    self.positional_encoding = nn.Embedding(M, hidden_size)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1643, in __setattr__
+    raise AttributeError(
+AttributeError: cannot assign module before Module.__init__() call
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 123, in <module>
+    encoder_model = EncoderTransformer(MSpectra, KEndmembers, 512, 8, 8)
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/models.py", line 33, in __init__
+    self.positional_encoding = nn.Embedding(M, hidden_size)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1643, in __setattr__
+    raise AttributeError(
+AttributeError: cannot assign module before Module.__init__() call
+Using Transformer Model

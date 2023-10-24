@@ -1,0 +1,11 @@
+
+Loaded txt
+Using Transformer Model
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 148, in <module>
+    train_tIs, val_tIs, train_tmsoc, val_tmsoc = train_test_split(tIs, tmsoc, test_size=trainval_ts, random_state=42)
+NameError: name 'trainval_ts' is not defined
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 148, in <module>
+    train_tIs, val_tIs, train_tmsoc, val_tmsoc = train_test_split(tIs, tmsoc, test_size=trainval_ts, random_state=42)
+NameError: name 'trainval_ts' is not defined

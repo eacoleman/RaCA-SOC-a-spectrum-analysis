@@ -1,0 +1,14 @@
+
+Loaded txt
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 103, in <module>
+    encoder_model = ConvMixingEncoder(MSpectra, KEndmembers, 512, 3, 2).to(device)
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/models.py", line 23, in __init__
+    super().__init()
+AttributeError: 'super' object has no attribute '_ConvMixingEncoder__init'
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 103, in <module>
+    encoder_model = ConvMixingEncoder(MSpectra, KEndmembers, 512, 3, 2).to(device)
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/models.py", line 23, in __init__
+    super().__init()
+AttributeError: 'super' object has no attribute '_ConvMixingEncoder__init'

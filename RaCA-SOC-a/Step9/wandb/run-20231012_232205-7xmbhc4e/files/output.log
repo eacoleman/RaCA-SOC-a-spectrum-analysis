@@ -1,0 +1,43 @@
+
+Loaded txt
+  0%|          | 0/10000 [00:00<?, ?it/s]
+> /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py(148)<module>()
+-> encoder_loss = 1000 * torch.mean((encoderPreds[:, -1] - batch_tmsoc) ** 2)
+/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/models.py:98: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  ms = self.smax(y_mlp);
+tensor([0.0107, 0.0095, 0.0094, 0.0100, 0.0098, 0.0102, 0.0101, 0.0096, 0.0096,
+        0.0096, 0.0089, 0.0098, 0.0129, 0.0098, 0.0087, 0.0095, 0.0086, 0.0098,
+        0.0098, 0.0096, 0.0102, 0.0109, 0.0101, 0.0152, 0.0111, 0.0109, 0.0142,
+        0.0062, 0.0100, 0.0096, 0.0100, 0.0094], device='cuda:0',
+       grad_fn=<SelectBackward0>)
+32
+32
+*** NameError: name 'encoderloss' is not defined
+*** NameError: name 'encoderLoss' is not defined
+*** NameError: name 'encoder_loss' is not defined
+*** RuntimeError: The size of tensor a (32) must match the size of tensor b (90) at non-singleton dimension 1
+90
+90
+*** TypeError: len() of a 0-d tensor
+torch.Size([32, 90])
+torch.Size([32, 90])
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 148, in <module>
+    encoder_loss = 1000 * torch.mean((encoderPreds[:, -1] - batch_tmsoc[:, -1]) ** 2)
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 148, in <module>
+    encoder_loss = 1000 * torch.mean((encoderPreds[:, -1] - batch_tmsoc[:, -1]) ** 2)
+  File "/usr/lib/python3.10/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.10/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 148, in <module>
+    encoder_loss = 1000 * torch.mean((encoderPreds[:, -1] - batch_tmsoc[:, -1]) ** 2)
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 148, in <module>
+    encoder_loss = 1000 * torch.mean((encoderPreds[:, -1] - batch_tmsoc[:, -1]) ** 2)
+  File "/usr/lib/python3.10/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.10/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

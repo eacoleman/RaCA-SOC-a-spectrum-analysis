@@ -1,0 +1,11 @@
+
+Loaded txt
+Using RNN Model
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 124, in <module>
+    encoder_model = EncoderRNN(MSpectra, KEndmembers, 64)
+NameError: name 'EncoderRNN' is not defined
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 124, in <module>
+    encoder_model = EncoderRNN(MSpectra, KEndmembers, 64)
+NameError: name 'EncoderRNN' is not defined

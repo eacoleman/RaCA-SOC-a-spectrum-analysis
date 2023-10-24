@@ -1,0 +1,30 @@
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/numpy-1.24.1-py3.10-linux-x86_64.egg/numpy/lib/npyio.py", line 1026, in _read
+    next_arr = _load_from_filelike(
+  File "/usr/lib/python3.10/codecs.py", line 331, in getstate
+    def getstate(self):
+KeyboardInterrupt
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 34, in <module>
+    data = np.loadtxt("/home/sujaynair/RaCA-spectra-raw.txt", delimiter=",",dtype=str)
+  File "/usr/local/lib/python3.10/dist-packages/numpy-1.24.1-py3.10-linux-x86_64.egg/numpy/lib/npyio.py", line 1348, in loadtxt
+    arr = _read(fname, dtype=dtype, comment=comment, delimiter=delimiter,
+  File "/usr/local/lib/python3.10/dist-packages/numpy-1.24.1-py3.10-linux-x86_64.egg/numpy/lib/npyio.py", line 1026, in _read
+    next_arr = _load_from_filelike(
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/numpy-1.24.1-py3.10-linux-x86_64.egg/numpy/lib/npyio.py", line 1026, in _read
+    next_arr = _load_from_filelike(
+  File "/usr/lib/python3.10/codecs.py", line 331, in getstate
+    def getstate(self):
+KeyboardInterrupt
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 34, in <module>
+    data = np.loadtxt("/home/sujaynair/RaCA-spectra-raw.txt", delimiter=",",dtype=str)
+  File "/usr/local/lib/python3.10/dist-packages/numpy-1.24.1-py3.10-linux-x86_64.egg/numpy/lib/npyio.py", line 1348, in loadtxt
+    arr = _read(fname, dtype=dtype, comment=comment, delimiter=delimiter,
+  File "/usr/local/lib/python3.10/dist-packages/numpy-1.24.1-py3.10-linux-x86_64.egg/numpy/lib/npyio.py", line 1026, in _read
+    next_arr = _load_from_filelike(
+KeyboardInterrupt

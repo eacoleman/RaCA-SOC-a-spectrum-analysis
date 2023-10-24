@@ -1,0 +1,10 @@
+
+Loaded txt
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 103, in <module>
+    encoder_model = ConvMixingEncoder(MSpectra, KEndmembers, 512, 3, 2).to(device)
+TypeError: ConvMixingEncoder.__init__() missing 1 required positional argument: 'sequence_length'
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 103, in <module>
+    encoder_model = ConvMixingEncoder(MSpectra, KEndmembers, 512, 3, 2).to(device)
+TypeError: ConvMixingEncoder.__init__() missing 1 required positional argument: 'sequence_length'

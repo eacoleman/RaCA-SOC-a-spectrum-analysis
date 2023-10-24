@@ -1,0 +1,38 @@
+
+Loaded txt
+  0%|          | 0/10000 [00:00<?, ?it/s]
+> /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/models.py(55)forward()
+-> y = y.permute(2, 0, 1)
+torch.Size([16, 2151])
+*** TypeError: unsqueeze() missing 1 required positional arguments: "dim"
+torch.Size([16, 1, 2151])
+*** SyntaxError: leading zeros in decimal integer literals are not permitted; use an 0o prefix for octal integers
+torch.Size([1, 16, 2151])
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 142, in <module>
+    encoderPreds = encoder_model(batch_tIs)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/models.py", line 55, in forward
+    y = y.unsqueeze(1)
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/models.py", line 55, in forward
+    y = y.unsqueeze(1)
+  File "/usr/lib/python3.10/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.10/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 142, in <module>
+    encoderPreds = encoder_model(batch_tIs)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/models.py", line 55, in forward
+    y = y.unsqueeze(1)
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/models.py", line 55, in forward
+    y = y.unsqueeze(1)
+  File "/usr/lib/python3.10/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.10/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

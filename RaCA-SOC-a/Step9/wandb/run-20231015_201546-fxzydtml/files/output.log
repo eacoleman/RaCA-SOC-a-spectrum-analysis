@@ -1,0 +1,26 @@
+
+Loaded txt
+Using Transformer Model
+> /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py(124)<module>()
+-> encoder_model = EncoderTransformer(MSpectra, KEndmembers, 512, 8, 8)
+*** NameError: name 'y' is not defined
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 124, in <module>
+    encoder_model = EncoderTransformer(MSpectra, KEndmembers, 512, 8, 8)
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 124, in <module>
+    encoder_model = EncoderTransformer(MSpectra, KEndmembers, 512, 8, 8)
+  File "/usr/lib/python3.10/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.10/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 124, in <module>
+    encoder_model = EncoderTransformer(MSpectra, KEndmembers, 512, 8, 8)
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 124, in <module>
+    encoder_model = EncoderTransformer(MSpectra, KEndmembers, 512, 8, 8)
+  File "/usr/lib/python3.10/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.10/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

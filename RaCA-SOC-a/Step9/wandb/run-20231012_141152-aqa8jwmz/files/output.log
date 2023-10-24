@@ -1,0 +1,11 @@
+
+Loaded txt
+  0%|          | 0/100 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 124, in <module>
+    encoderPreds = encoder_model(train_tIs)
+NameError: name 'train_tIs' is not defined
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 124, in <module>
+    encoderPreds = encoder_model(train_tIs)
+NameError: name 'train_tIs' is not defined

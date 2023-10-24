@@ -1,0 +1,15 @@
+
+Loaded txt
+1944360
+  0%|          | 0/1000 [00:00<?, ?it/s]
+0
+/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/models.py:59: UserWarning: Implicit dimension choice for softmax has been deprecated. Change the call to include dim=X as an argument.
+  ms = self.smax(y_mlp);
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 152, in <module>
+    loss = 1000 * torch.mean((encoderPreds[:, -1] - tmsoc) ** 2)
+RuntimeError: The size of tensor a (32) must match the size of tensor b (121376) at non-singleton dimension 0
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 152, in <module>
+    loss = 1000 * torch.mean((encoderPreds[:, -1] - tmsoc) ** 2)
+RuntimeError: The size of tensor a (32) must match the size of tensor b (121376) at non-singleton dimension 0

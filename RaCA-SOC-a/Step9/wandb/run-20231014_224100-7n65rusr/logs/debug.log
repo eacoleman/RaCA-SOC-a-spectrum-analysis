@@ -1,0 +1,91 @@
+2023-10-14 22:41:00,573 INFO    MainThread:1770643 [wandb_setup.py:_flush():76] Current SDK version is 0.15.10
+2023-10-14 22:41:00,573 INFO    MainThread:1770643 [wandb_setup.py:_flush():76] Configure stats pid to 1770643
+2023-10-14 22:41:00,573 INFO    MainThread:1770643 [wandb_setup.py:_flush():76] Loading settings from /home/sujaynair/.config/wandb/settings
+2023-10-14 22:41:00,573 INFO    MainThread:1770643 [wandb_setup.py:_flush():76] Loading settings from /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/settings
+2023-10-14 22:41:00,573 INFO    MainThread:1770643 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-10-14 22:41:00,573 INFO    MainThread:1770643 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-10-14 22:41:00,573 INFO    MainThread:1770643 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'RaCA-SOC-a/Step9/updatedTrain.py', 'program': '/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py'}
+2023-10-14 22:41:00,573 INFO    MainThread:1770643 [wandb_init.py:_log_setup():524] Logging user logs to /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20231014_224100-7n65rusr/logs/debug.log
+2023-10-14 22:41:00,573 INFO    MainThread:1770643 [wandb_init.py:_log_setup():525] Logging internal logs to /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/wandb/run-20231014_224100-7n65rusr/logs/debug-internal.log
+2023-10-14 22:41:00,573 INFO    MainThread:1770643 [wandb_init.py:init():564] calling init triggers
+2023-10-14 22:41:00,573 INFO    MainThread:1770643 [wandb_init.py:init():571] wandb.init called with sweep_config: {}
+config: {}
+2023-10-14 22:41:00,573 INFO    MainThread:1770643 [wandb_init.py:init():614] starting backend
+2023-10-14 22:41:00,573 INFO    MainThread:1770643 [wandb_init.py:init():618] setting up manager
+2023-10-14 22:41:00,574 INFO    MainThread:1770643 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-10-14 22:41:00,575 INFO    MainThread:1770643 [wandb_init.py:init():624] backend started and connected
+2023-10-14 22:41:00,576 INFO    MainThread:1770643 [wandb_init.py:init():715] updated telemetry
+2023-10-14 22:41:00,579 INFO    MainThread:1770643 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2023-10-14 22:41:59,288 INFO    Thread-1 (wrapped_target):1770643 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 536, in _make_request
+    response = conn.getresponse()
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/urllib3/connection.py", line 461, in getresponse
+    httplib_response = super().getresponse()
+  File "/usr/lib/python3.10/http/client.py", line 1375, in getresponse
+    response.begin()
+  File "/usr/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.10/http/client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/lib/python3.10/ssl.py", line 1274, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/lib/python3.10/ssl.py", line 1130, in read
+    return self._sslobj.read(len, buffer)
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 844, in urlopen
+    retries = retries.increment(
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/urllib3/util/retry.py", line 470, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/urllib3/util/util.py", line 39, in reraise
+    raise value
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 790, in urlopen
+    response = self._make_request(
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 538, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/urllib3/connectionpool.py", line 370, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Read timed out. (read timeout=20)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 358, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/wandb/sdk/lib/gql_request.py", line 55, in execute
+    request = self.session.post(self.url, **post_args)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/requests/adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.wandb.ai', port=443): Read timed out. (read timeout=20)
+2023-10-14 22:42:30,600 ERROR   MainThread:1770643 [wandb_init.py:init():774] encountered error: Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+2023-10-14 22:42:30,785 ERROR   MainThread:1770643 [wandb_init.py:init():1183] Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+Traceback (most recent call last):
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 1165, in init
+    run = wi.init()
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 780, in init
+    raise error
+wandb.errors.CommError: Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+2023-10-14 22:42:31,797 WARNING MsgRouterThr:1770643 [router.py:message_loop():77] message_loop has been closed

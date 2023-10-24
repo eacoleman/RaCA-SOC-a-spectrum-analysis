@@ -1,0 +1,206 @@
+
+Loaded txt
+Using Transformer Model
+  0%|          | 0/10000 [00:00<?, ?it/s]
+Epoch 0: Encoder Loss: 7.7332, Decoder Loss: 0.0212
+Validation - Encoder Loss: 7.5820, Decoder Loss: 0.0190
+Epoch 1: Encoder Loss: 7.6474, Decoder Loss: 0.0167
+Validation - Encoder Loss: 7.5784, Decoder Loss: 0.0149
+Epoch 2: Encoder Loss: 7.6466, Decoder Loss: 0.0132
+Validation - Encoder Loss: 7.5725, Decoder Loss: 0.0119
+Epoch 3: Encoder Loss: 7.6395, Decoder Loss: 0.0108
+Validation - Encoder Loss: 7.5763, Decoder Loss: 0.0098
+Epoch 4: Encoder Loss: 7.6392, Decoder Loss: 0.0087
+Validation - Encoder Loss: 7.5694, Decoder Loss: 0.0078
+Epoch 5: Encoder Loss: 7.6393, Decoder Loss: 0.0070
+Validation - Encoder Loss: 7.5624, Decoder Loss: 0.0062
+Epoch 6: Encoder Loss: 7.6349, Decoder Loss: 0.0056
+Validation - Encoder Loss: 7.5696, Decoder Loss: 0.0049
+Epoch 7: Encoder Loss: 7.6328, Decoder Loss: 0.0044
+Validation - Encoder Loss: 7.5589, Decoder Loss: 0.0039
+Epoch 8: Encoder Loss: 7.6368, Decoder Loss: 0.0035
+Validation - Encoder Loss: 7.5631, Decoder Loss: 0.0031
+Epoch 9: Encoder Loss: 7.6314, Decoder Loss: 0.0028
+Validation - Encoder Loss: 7.5602, Decoder Loss: 0.0025
+Epoch 10: Encoder Loss: 7.6333, Decoder Loss: 0.0022
+Validation - Encoder Loss: 7.5622, Decoder Loss: 0.0020
+Epoch 11: Encoder Loss: 7.6296, Decoder Loss: 0.0018
+Validation - Encoder Loss: 7.5678, Decoder Loss: 0.0017
+Epoch 12: Encoder Loss: 7.6289, Decoder Loss: 0.0015
+Validation - Encoder Loss: 7.5674, Decoder Loss: 0.0013
+Epoch 13: Encoder Loss: 7.6317, Decoder Loss: 0.0012
+Validation - Encoder Loss: 7.5628, Decoder Loss: 0.0011
+Epoch 14: Encoder Loss: 7.6299, Decoder Loss: 0.0010
+Validation - Encoder Loss: 7.5624, Decoder Loss: 0.0010
+Epoch 15: Encoder Loss: 7.6308, Decoder Loss: 0.0009
+Validation - Encoder Loss: 7.5615, Decoder Loss: 0.0008
+Epoch 16: Encoder Loss: 7.6304, Decoder Loss: 0.0008
+Validation - Encoder Loss: 7.5601, Decoder Loss: 0.0007
+Epoch 17: Encoder Loss: 7.6265, Decoder Loss: 0.0007
+Validation - Encoder Loss: 7.5607, Decoder Loss: 0.0006
+Epoch 18: Encoder Loss: 7.6270, Decoder Loss: 0.0006
+Validation - Encoder Loss: 7.5558, Decoder Loss: 0.0006
+Epoch 19: Encoder Loss: 7.6262, Decoder Loss: 0.0005
+Validation - Encoder Loss: 7.5632, Decoder Loss: 0.0005
+Epoch 20: Encoder Loss: 7.6277, Decoder Loss: 0.0005
+Validation - Encoder Loss: 7.5624, Decoder Loss: 0.0005
+Epoch 21: Encoder Loss: 7.6302, Decoder Loss: 0.0005
+Validation - Encoder Loss: 7.5586, Decoder Loss: 0.0005
+Epoch 22: Encoder Loss: 7.6277, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5592, Decoder Loss: 0.0004
+Epoch 23: Encoder Loss: 7.6279, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5594, Decoder Loss: 0.0004
+Epoch 24: Encoder Loss: 7.6294, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5575, Decoder Loss: 0.0004
+Epoch 25: Encoder Loss: 7.6252, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5609, Decoder Loss: 0.0004
+Epoch 26: Encoder Loss: 7.6255, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5555, Decoder Loss: 0.0004
+Epoch 27: Encoder Loss: 7.6281, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5587, Decoder Loss: 0.0004
+Epoch 28: Encoder Loss: 7.6263, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5526, Decoder Loss: 0.0004
+Epoch 29: Encoder Loss: 7.6268, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5590, Decoder Loss: 0.0004
+Epoch 30: Encoder Loss: 7.6272, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5607, Decoder Loss: 0.0004
+Epoch 31: Encoder Loss: 7.6278, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5556, Decoder Loss: 0.0004
+Epoch 32: Encoder Loss: 7.6271, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5581, Decoder Loss: 0.0004
+Epoch 33: Encoder Loss: 7.6265, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5566, Decoder Loss: 0.0004
+Epoch 34: Encoder Loss: 7.6264, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5575, Decoder Loss: 0.0004
+Epoch 35: Encoder Loss: 7.6268, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5567, Decoder Loss: 0.0004
+Epoch 36: Encoder Loss: 7.6261, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5574, Decoder Loss: 0.0004
+Epoch 37: Encoder Loss: 7.6250, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5533, Decoder Loss: 0.0004
+Epoch 38: Encoder Loss: 7.6256, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5577, Decoder Loss: 0.0004
+Epoch 39: Encoder Loss: 7.6261, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5593, Decoder Loss: 0.0004
+Epoch 40: Encoder Loss: 7.6269, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5576, Decoder Loss: 0.0004
+Epoch 41: Encoder Loss: 7.6259, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5557, Decoder Loss: 0.0004
+Epoch 42: Encoder Loss: 7.6262, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5570, Decoder Loss: 0.0004
+Epoch 43: Encoder Loss: 7.6247, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5600, Decoder Loss: 0.0004
+Epoch 44: Encoder Loss: 7.6242, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5583, Decoder Loss: 0.0004
+Epoch 45: Encoder Loss: 7.6244, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5579, Decoder Loss: 0.0004
+Epoch 46: Encoder Loss: 7.6253, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5557, Decoder Loss: 0.0004
+Epoch 47: Encoder Loss: 7.6258, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5584, Decoder Loss: 0.0004
+Epoch 48: Encoder Loss: 7.6269, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5559, Decoder Loss: 0.0004
+Epoch 49: Encoder Loss: 7.6259, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5578, Decoder Loss: 0.0004
+Epoch 50: Encoder Loss: 7.6249, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5551, Decoder Loss: 0.0004
+Epoch 51: Encoder Loss: 7.6259, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5569, Decoder Loss: 0.0004
+Epoch 52: Encoder Loss: 7.6245, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5574, Decoder Loss: 0.0004
+Epoch 53: Encoder Loss: 7.6254, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5585, Decoder Loss: 0.0004
+Epoch 54: Encoder Loss: 7.6252, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5546, Decoder Loss: 0.0004
+Epoch 55: Encoder Loss: 7.6244, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5570, Decoder Loss: 0.0004
+Epoch 56: Encoder Loss: 7.6252, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5570, Decoder Loss: 0.0004
+Epoch 57: Encoder Loss: 7.6242, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5535, Decoder Loss: 0.0004
+Epoch 58: Encoder Loss: 7.6264, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5531, Decoder Loss: 0.0004
+Epoch 59: Encoder Loss: 7.6252, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5547, Decoder Loss: 0.0004
+Epoch 60: Encoder Loss: 7.6241, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5576, Decoder Loss: 0.0004
+Epoch 61: Encoder Loss: 7.6239, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5571, Decoder Loss: 0.0004
+Epoch 62: Encoder Loss: 7.6231, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5559, Decoder Loss: 0.0004
+Epoch 63: Encoder Loss: 7.6251, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5576, Decoder Loss: 0.0004
+Epoch 64: Encoder Loss: 7.6254, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5578, Decoder Loss: 0.0004
+Epoch 65: Encoder Loss: 7.6245, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5569, Decoder Loss: 0.0004
+Epoch 66: Encoder Loss: 7.6247, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5559, Decoder Loss: 0.0004
+Epoch 67: Encoder Loss: 7.6253, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5580, Decoder Loss: 0.0004
+Epoch 68: Encoder Loss: 7.6243, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5571, Decoder Loss: 0.0004
+Epoch 69: Encoder Loss: 7.6232, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5526, Decoder Loss: 0.0004
+Epoch 70: Encoder Loss: 7.6252, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5534, Decoder Loss: 0.0004
+Epoch 71: Encoder Loss: 7.6251, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5557, Decoder Loss: 0.0004
+Epoch 72: Encoder Loss: 7.6262, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5551, Decoder Loss: 0.0004
+Epoch 73: Encoder Loss: 7.6244, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5559, Decoder Loss: 0.0004
+Epoch 74: Encoder Loss: 7.6242, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5571, Decoder Loss: 0.0004
+Epoch 75: Encoder Loss: 7.6249, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5577, Decoder Loss: 0.0004
+Epoch 76: Encoder Loss: 7.6234, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5530, Decoder Loss: 0.0004
+Epoch 77: Encoder Loss: 7.6253, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5577, Decoder Loss: 0.0004
+Epoch 78: Encoder Loss: 7.6239, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5545, Decoder Loss: 0.0004
+Epoch 79: Encoder Loss: 7.6256, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5536, Decoder Loss: 0.0004
+Epoch 80: Encoder Loss: 7.6238, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5573, Decoder Loss: 0.0004
+Epoch 81: Encoder Loss: 7.6253, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5586, Decoder Loss: 0.0004
+Epoch 82: Encoder Loss: 7.6242, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5568, Decoder Loss: 0.0004
+Epoch 83: Encoder Loss: 7.6255, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5584, Decoder Loss: 0.0004
+Epoch 84: Encoder Loss: 7.6244, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5565, Decoder Loss: 0.0004
+Epoch 85: Encoder Loss: 7.6242, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5563, Decoder Loss: 0.0004
+Epoch 86: Encoder Loss: 7.6251, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5603, Decoder Loss: 0.0004
+Epoch 87: Encoder Loss: 7.6255, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5593, Decoder Loss: 0.0004
+Epoch 88: Encoder Loss: 7.6246, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5580, Decoder Loss: 0.0004
+Epoch 89: Encoder Loss: 7.6253, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5546, Decoder Loss: 0.0004
+Epoch 90: Encoder Loss: 7.6256, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5566, Decoder Loss: 0.0004
+Epoch 91: Encoder Loss: 7.6240, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5557, Decoder Loss: 0.0004
+Epoch 92: Encoder Loss: 7.6239, Decoder Loss: 0.0004
+Validation - Encoder Loss: 7.5566, Decoder Loss: 0.0004
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 194, in <module>
+    loss.backward()
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/_tensor.py", line 487, in backward
+    torch.autograd.backward(
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/autograd/__init__.py", line 200, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 194, in <module>
+    loss.backward()
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/_tensor.py", line 487, in backward
+    torch.autograd.backward(
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/autograd/__init__.py", line 200, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

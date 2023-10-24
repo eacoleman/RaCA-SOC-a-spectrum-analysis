@@ -1,0 +1,11 @@
+
+Loaded txt
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 116, in <module>
+    rrTracking[epoch] = decoder_model.rrsoc.detach().item()
+NameError: name 'rrTracking' is not defined
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 116, in <module>
+    rrTracking[epoch] = decoder_model.rrsoc.detach().item()
+NameError: name 'rrTracking' is not defined
+  0%|          | 0/100 [00:00<?, ?it/s]

@@ -1,0 +1,24 @@
+
+Loaded txt
+> /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py(104)<module>()
+-> encoder_model = EncoderConv1D(MSpectra, KEndmembers, 16, 3).to(device)
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 104, in <module>
+    encoder_model = EncoderConv1D(MSpectra, KEndmembers, 16, 3).to(device)
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 104, in <module>
+    encoder_model = EncoderConv1D(MSpectra, KEndmembers, 16, 3).to(device)
+  File "/usr/lib/python3.10/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.10/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 104, in <module>
+    encoder_model = EncoderConv1D(MSpectra, KEndmembers, 16, 3).to(device)
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 104, in <module>
+    encoder_model = EncoderConv1D(MSpectra, KEndmembers, 16, 3).to(device)
+  File "/usr/lib/python3.10/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.10/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

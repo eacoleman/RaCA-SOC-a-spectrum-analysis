@@ -1,0 +1,26 @@
+
+Loaded txt
+Using Transformer Model
+> /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py(124)<module>()
+-> encoder_model = EncoderTransformer(MSpectra, KEndmembers, 512, 8, 8)
+  0%|          | 0/10000 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 170, in <module>
+    encoderPreds = encoder_model(batch_tIs)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/models.py", line 46, in forward
+    positional_encodings = self.positional_encoding(self.M, self.hidden_size)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+TypeError: Embedding.forward() takes 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 170, in <module>
+    encoderPreds = encoder_model(batch_tIs)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/models.py", line 46, in forward
+    positional_encodings = self.positional_encoding(self.M, self.hidden_size)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+TypeError: Embedding.forward() takes 2 positional arguments but 3 were given

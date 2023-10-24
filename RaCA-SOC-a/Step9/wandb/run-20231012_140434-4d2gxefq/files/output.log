@@ -1,0 +1,10 @@
+
+Loaded txt
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 104, in <module>
+    decoder_model = LinearMixingDecoder(tFs, tMs, trhorads).to(device)
+NameError: name 'tFs' is not defined
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 104, in <module>
+    decoder_model = LinearMixingDecoder(tFs, tMs, trhorads).to(device)
+NameError: name 'tFs' is not defined. Did you mean: 'tMs'?
