@@ -129,6 +129,43 @@ class EncoderConv1D(nn.Module):
         
         return ms
 
+
+class EncoderConv1DWithUncertainty(nn.Module):
+    def __init__(self, M, K, hidden_size, kernel_size):
+        super(EncoderConv1DWithUncertainty, self).__init__()
+        
+        # Convolutional layers
+        self.conv1 = nn.Conv1d(in_channels=1, out_channels=hidden_size, kernel_size=kernel_size)
+        self.conv2 = nn.Conv1d(in_channels=hidden_size, out_channels=hidden_size, kernel_size=kernel_size)
+        
+        # Fully connected layers
+        self.fc1 = nn.Linear(hidden_size * (M - 2 * kernel_size + 2), 128)
+        
+        # Output layers for predictions and uncertainties
+        self.fc2_predictions = nn.Linear(128, K)
+        self.fc2_uncertainties = nn.Linear(128, K)
+        
+    def forward(self, y):
+        device = "cuda:0"
+        # Apply Conv1D layers
+        y_conv1 = self.conv1(y.unsqueeze(1))  # Add a channel dimension
+        y_conv2 = self.conv2(y_conv1)
+        
+        # Flatten the output
+        y_flat = y_conv2.view(y_conv2.size(0), -1)
+        
+        # Fully connected layers
+        y_fc1 = self.fc1(y_flat)
+        
+        # Separate fully connected layers for predictions and uncertainties
+        mean = self.fc2_predictions(y_fc1)
+        sd = torch.sigmoid(self.fc2_uncertainties(y_fc1))
+        # pdb.set_trace()
+        # Apply a Gaussian function to add uncertainties
+        sample = (torch.randn(sd.size(), device=device) * sd + mean).clip(min=0, max=1)
+        
+        return sample, sd, mean
+
 class LinearMixingEncoder(nn.Module):
     def __init__(self, M, K, hidden_size):
         super().__init__()
@@ -202,6 +239,8 @@ class LinearMixingDecoder(nn.Module):
         # Compute the multiplicative factor for our fake Lagrange multipliers
         # return (1 + 100.0* diffloss + 1000.0*oobsF) 
         return (1 + 1000.0*oobsF)
+
+        
 class LinearMixingModel(nn.Module):
     def __init__(self, seedFs, seedFsoc, seedMs, rhorad, seedrrsoc, nepochs):
         super().__init__()

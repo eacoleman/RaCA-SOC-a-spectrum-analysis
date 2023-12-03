@@ -1,0 +1,13 @@
+
+Loaded txt
+Using 1D Conv Model with Uncertainties
+  0%|          | 0/20 [00:00<?, ?it/s]
+Epoch 0: Encoder Loss: 1.9763, Decoder Loss: 0.0011
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 249, in <module>
+    all_uncertainties.append(encoderUncertaintiesV.cpu().numpy())
+NameError: name 'all_uncertainties' is not defined
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 249, in <module>
+    all_uncertainties.append(encoderUncertaintiesV.cpu().numpy())
+NameError: name 'all_uncertainties' is not defined

@@ -1,0 +1,24 @@
+
+Loaded txt
+> /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py(131)<module>()
+-> batch_size = args.batch  # You can adjust this as needed
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 131, in <module>
+    pdb.set_trace()
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 131, in <module>
+    pdb.set_trace()
+  File "/usr/lib/python3.10/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.10/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 131, in <module>
+    pdb.set_trace()
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 131, in <module>
+    pdb.set_trace()
+  File "/usr/lib/python3.10/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.10/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

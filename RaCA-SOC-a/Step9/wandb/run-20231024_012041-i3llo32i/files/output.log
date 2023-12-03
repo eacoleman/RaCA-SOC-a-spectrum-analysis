@@ -1,0 +1,92 @@
+
+Loaded txt
+> /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py(121)<module>()
+-> tMs_train = torch.tensor(y_train.tolist())
+Using 1D Conv Model
+  0%|          | 0/100 [00:00<?, ?it/s]
+Epoch 0: Encoder Loss: 3.1233, Decoder Loss: 0.0106
+Validation - Encoder Loss: 1.5344, Decoder Loss: 0.0091
+Epoch 1: Encoder Loss: 1.1356, Decoder Loss: 0.0090
+Validation - Encoder Loss: 0.6842, Decoder Loss: 0.0087
+Epoch 2: Encoder Loss: 0.5558, Decoder Loss: 0.0085
+Validation - Encoder Loss: 0.4641, Decoder Loss: 0.0079
+Epoch 3: Encoder Loss: 0.3779, Decoder Loss: 0.0080
+Validation - Encoder Loss: 0.3156, Decoder Loss: 0.0075
+Epoch 4: Encoder Loss: 0.2965, Decoder Loss: 0.0065
+Validation - Encoder Loss: 0.2686, Decoder Loss: 0.0053
+Epoch 5: Encoder Loss: 0.2664, Decoder Loss: 0.0050
+Validation - Encoder Loss: 0.2672, Decoder Loss: 0.0044
+Program interrupted. (Use 'cont' to resume).
+> /home/sujaynair/.local/lib/python3.10/site-packages/torch/optim/adam.py(448)_multi_tensor_adam()
+-> torch._foreach_mul_(device_exp_avg_sqs, beta2)
+--KeyboardInterrupt--
+Traceback (most recent call last):
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/utils/data/_utils/signal_handling.py", line 66, in handler
+    _error_if_any_worker_fails()
+RuntimeError: DataLoader worker (pid 3691810) exited unexpectedly with exit code 1. Details are lost due to multiprocessing. Rerunning with num_workers=0 may give better error trace.
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 219, in <module>
+    encoder_optimizer.step()
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/optim/optimizer.py", line 280, in wrapper
+    out = func(*args, **kwargs)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/optim/optimizer.py", line 33, in _use_grad
+    ret = func(self, *args, **kwargs)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/optim/adam.py", line 141, in step
+    adam(
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/optim/adam.py", line 281, in adam
+    func(params,
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/optim/adam.py", line 448, in _multi_tensor_adam
+    torch._foreach_mul_(device_exp_avg_sqs, beta2)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/optim/adam.py", line 448, in _multi_tensor_adam
+    torch._foreach_mul_(device_exp_avg_sqs, beta2)
+  File "/usr/lib/python3.10/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.10/bdb.py", line 114, in dispatch_line
+    self.user_line(frame)
+  File "/usr/lib/python3.10/pdb.py", line 253, in user_line
+    self.interaction(frame, None)
+  File "/usr/lib/python3.10/pdb.py", line 348, in interaction
+    self._cmdloop()
+  File "/usr/lib/python3.10/pdb.py", line 313, in _cmdloop
+    self.cmdloop()
+  File "/usr/lib/python3.10/cmd.py", line 126, in cmdloop
+    line = input(self.prompt)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/utils/data/_utils/signal_handling.py", line 66, in handler
+    _error_if_any_worker_fails()
+SystemError: <built-in function _error_if_any_worker_fails> returned a result with an exception set
+Traceback (most recent call last):
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/utils/data/_utils/signal_handling.py", line 66, in handler
+    _error_if_any_worker_fails()
+RuntimeError: DataLoader worker (pid 3691810) exited unexpectedly with exit code 1. Details are lost due to multiprocessing. Rerunning with num_workers=0 may give better error trace.
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 219, in <module>
+    encoder_optimizer.step()
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/optim/optimizer.py", line 280, in wrapper
+    out = func(*args, **kwargs)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/optim/optimizer.py", line 33, in _use_grad
+    ret = func(self, *args, **kwargs)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/optim/adam.py", line 141, in step
+    adam(
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/optim/adam.py", line 281, in adam
+    func(params,
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/optim/adam.py", line 448, in _multi_tensor_adam
+    torch._foreach_mul_(device_exp_avg_sqs, beta2)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/optim/adam.py", line 448, in _multi_tensor_adam
+    torch._foreach_mul_(device_exp_avg_sqs, beta2)
+  File "/usr/lib/python3.10/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.10/bdb.py", line 114, in dispatch_line
+    self.user_line(frame)
+  File "/usr/lib/python3.10/pdb.py", line 253, in user_line
+    self.interaction(frame, None)
+  File "/usr/lib/python3.10/pdb.py", line 348, in interaction
+    self._cmdloop()
+  File "/usr/lib/python3.10/pdb.py", line 313, in _cmdloop
+    self.cmdloop()
+  File "/usr/lib/python3.10/cmd.py", line 126, in cmdloop
+    line = input(self.prompt)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/utils/data/_utils/signal_handling.py", line 66, in handler
+    _error_if_any_worker_fails()
+SystemError: <built-in function _error_if_any_worker_fails> returned a result with an exception set

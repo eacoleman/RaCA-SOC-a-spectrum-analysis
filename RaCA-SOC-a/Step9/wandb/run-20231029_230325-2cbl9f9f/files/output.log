@@ -1,0 +1,67 @@
+
+Loaded txt
+Using 1D Conv Model with Uncertainties
+  0%|          | 0/20 [00:00<?, ?it/s]
+Epoch 0: Encoder Loss: 2.2264, Decoder Loss: 0.0113
+Validation - Encoder Loss: 0.8051, Decoder Loss: 0.0059
+Epoch 1: Encoder Loss: 0.8610, Decoder Loss: 0.0029
+Validation - Encoder Loss: 0.7220, Decoder Loss: 0.0015
+Epoch 2: Encoder Loss: 0.7741, Decoder Loss: 0.0013
+Validation - Encoder Loss: 0.6905, Decoder Loss: 0.0012
+Epoch 3: Encoder Loss: 0.6991, Decoder Loss: 0.0011
+Validation - Encoder Loss: 0.6554, Decoder Loss: 0.0010
+Epoch 4: Encoder Loss: 0.6910, Decoder Loss: 0.0009
+Validation - Encoder Loss: 0.6132, Decoder Loss: 0.0008
+Epoch 5: Encoder Loss: 0.6560, Decoder Loss: 0.0007
+Validation - Encoder Loss: 0.5990, Decoder Loss: 0.0005
+Epoch 6: Encoder Loss: 0.6399, Decoder Loss: 0.0004
+Validation - Encoder Loss: 0.7305, Decoder Loss: 0.0003
+Epoch 7: Encoder Loss: 0.5857, Decoder Loss: 0.0002
+Validation - Encoder Loss: 0.5761, Decoder Loss: 0.0001
+Epoch 8: Encoder Loss: 0.5648, Decoder Loss: 0.0001
+Validation - Encoder Loss: 0.5127, Decoder Loss: 0.0000
+Epoch 9: Encoder Loss: 0.5429, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.4894, Decoder Loss: 0.0000
+Epoch 10: Encoder Loss: 0.5308, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.4607, Decoder Loss: 0.0000
+Epoch 11: Encoder Loss: 0.5162, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.4565, Decoder Loss: 0.0000
+Epoch 12: Encoder Loss: 0.4700, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.5062, Decoder Loss: 0.0000
+Epoch 13: Encoder Loss: 0.4673, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.4249, Decoder Loss: 0.0000
+Epoch 14: Encoder Loss: 0.4575, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.4579, Decoder Loss: 0.0000
+Epoch 15: Encoder Loss: 0.4363, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.4912, Decoder Loss: 0.0000
+Epoch 16: Encoder Loss: 0.4094, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.4209, Decoder Loss: 0.0000
+Epoch 17: Encoder Loss: 0.4076, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.3869, Decoder Loss: 0.0000
+Epoch 18: Encoder Loss: 0.3813, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.3252, Decoder Loss: 0.0000
+Epoch 19: Encoder Loss: 0.3476, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.5575, Decoder Loss: 0.0000
+> /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py(263)<module>()
+-> all_uncertainties = encoderUncertainties
+torch.Size([12, 90])
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 263, in <module>
+    # Gather all uncertainties from the validation set
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 263, in <module>
+    # Gather all uncertainties from the validation set
+  File "/usr/lib/python3.10/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.10/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 263, in <module>
+    # Gather all uncertainties from the validation set
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 263, in <module>
+    # Gather all uncertainties from the validation set
+  File "/usr/lib/python3.10/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.10/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

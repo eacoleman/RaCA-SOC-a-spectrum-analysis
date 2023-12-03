@@ -1,0 +1,73 @@
+
+Loaded txt
+Using 1D Conv Model with Uncertainties
+  0%|          | 0/10000 [00:00<?, ?it/s]
+Epoch 0: Encoder Loss: nan, Decoder Loss: nan
+Validation - Encoder Loss: nan, Decoder Loss: nan
+Epoch 1: Encoder Loss: nan, Decoder Loss: nan
+Validation - Encoder Loss: nan, Decoder Loss: nan
+Epoch 2: Encoder Loss: nan, Decoder Loss: nan
+Validation - Encoder Loss: nan, Decoder Loss: nan
+Epoch 3: Encoder Loss: nan, Decoder Loss: nan
+Validation - Encoder Loss: nan, Decoder Loss: nan
+Epoch 4: Encoder Loss: nan, Decoder Loss: nan
+Validation - Encoder Loss: nan, Decoder Loss: nan
+Epoch 5: Encoder Loss: nan, Decoder Loss: nan
+Validation - Encoder Loss: nan, Decoder Loss: nan
+Epoch 6: Encoder Loss: nan, Decoder Loss: nan
+Validation - Encoder Loss: nan, Decoder Loss: nan
+Epoch 7: Encoder Loss: nan, Decoder Loss: nan
+Validation - Encoder Loss: nan, Decoder Loss: nan
+Epoch 8: Encoder Loss: nan, Decoder Loss: nan
+Validation - Encoder Loss: nan, Decoder Loss: nan
+Epoch 9: Encoder Loss: nan, Decoder Loss: nan
+Validation - Encoder Loss: nan, Decoder Loss: nan
+Epoch 10: Encoder Loss: nan, Decoder Loss: nan
+Validation - Encoder Loss: nan, Decoder Loss: nan
+Epoch 11: Encoder Loss: nan, Decoder Loss: nan
+Validation - Encoder Loss: nan, Decoder Loss: nan
+Epoch 12: Encoder Loss: nan, Decoder Loss: nan
+Validation - Encoder Loss: nan, Decoder Loss: nan
+Epoch 13: Encoder Loss: nan, Decoder Loss: nan
+Validation - Encoder Loss: nan, Decoder Loss: nan
+Epoch 14: Encoder Loss: nan, Decoder Loss: nan
+Validation - Encoder Loss: nan, Decoder Loss: nan
+Epoch 15: Encoder Loss: nan, Decoder Loss: nan
+Validation - Encoder Loss: nan, Decoder Loss: nan
+Epoch 16: Encoder Loss: nan, Decoder Loss: nan
+Validation - Encoder Loss: nan, Decoder Loss: nan
+Epoch 17: Encoder Loss: nan, Decoder Loss: nan
+Validation - Encoder Loss: nan, Decoder Loss: nan
+Epoch 18: Encoder Loss: nan, Decoder Loss: nan
+Validation - Encoder Loss: nan, Decoder Loss: nan
+Epoch 19: Encoder Loss: nan, Decoder Loss: nan
+Validation - Encoder Loss: nan, Decoder Loss: nan
+Epoch 20: Encoder Loss: nan, Decoder Loss: nan
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 294, in <module>
+    encoderPredsV, encoderUncertaintiesV, meanV = encoder_model(batch_val_tIs)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/models.py", line 151, in forward
+    y_conv1 = self.conv1(y.unsqueeze(1))  # Add a channel dimension
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 313, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 309, in _conv_forward
+    return F.conv1d(input, weight, bias, self.stride,
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 294, in <module>
+    encoderPredsV, encoderUncertaintiesV, meanV = encoder_model(batch_val_tIs)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/models.py", line 151, in forward
+    y_conv1 = self.conv1(y.unsqueeze(1))  # Add a channel dimension
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 313, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 309, in _conv_forward
+    return F.conv1d(input, weight, bias, self.stride,
+KeyboardInterrupt

@@ -1,0 +1,110 @@
+
+Loaded txt
+Using 1D Conv Model with Uncertainties
+  0%|          | 0/20 [00:00<?, ?it/s]
+Epoch 0: Encoder Loss: 2.2388, Decoder Loss: 0.0111
+Validation - Encoder Loss: 0.9738, Decoder Loss: 0.0020
+Epoch 1: Encoder Loss: 0.8029, Decoder Loss: 0.0010
+Validation - Encoder Loss: 0.6904, Decoder Loss: 0.0007
+Epoch 2: Encoder Loss: 0.7526, Decoder Loss: 0.0006
+Validation - Encoder Loss: 0.7035, Decoder Loss: 0.0005
+Epoch 3: Encoder Loss: 0.6682, Decoder Loss: 0.0004
+Validation - Encoder Loss: 0.6607, Decoder Loss: 0.0004
+Epoch 4: Encoder Loss: 0.6628, Decoder Loss: 0.0003
+Validation - Encoder Loss: 0.5826, Decoder Loss: 0.0003
+Epoch 5: Encoder Loss: 0.6174, Decoder Loss: 0.0003
+Validation - Encoder Loss: 0.5785, Decoder Loss: 0.0002
+Epoch 6: Encoder Loss: 0.6018, Decoder Loss: 0.0002
+Validation - Encoder Loss: 0.5320, Decoder Loss: 0.0001
+Epoch 7: Encoder Loss: 0.5720, Decoder Loss: 0.0001
+Validation - Encoder Loss: 0.6276, Decoder Loss: 0.0001
+Epoch 8: Encoder Loss: 0.5283, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.4665, Decoder Loss: 0.0000
+Epoch 9: Encoder Loss: 0.5198, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.6653, Decoder Loss: 0.0000
+Epoch 10: Encoder Loss: 0.5070, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.4434, Decoder Loss: 0.0000
+Epoch 11: Encoder Loss: 0.4789, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.5747, Decoder Loss: 0.0000
+Epoch 12: Encoder Loss: 0.4671, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.4764, Decoder Loss: 0.0000
+Epoch 13: Encoder Loss: 0.4285, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.4194, Decoder Loss: 0.0000
+Epoch 14: Encoder Loss: 0.3948, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.3395, Decoder Loss: 0.0000
+Epoch 15: Encoder Loss: 0.3808, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.3146, Decoder Loss: 0.0000
+Epoch 16: Encoder Loss: 0.3595, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.3038, Decoder Loss: 0.0000
+Epoch 17: Encoder Loss: 0.3105, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.2715, Decoder Loss: 0.0000
+Epoch 18: Encoder Loss: 0.2895, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.3510, Decoder Loss: 0.0000
+Epoch 19: Encoder Loss: 0.2737, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.3702, Decoder Loss: 0.0000
+> /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py(267)<module>()
+-> with torch.no_grad():
+<Figure size 1000x45000 with 0 Axes>
+*** NameError: name 'a' is not defined
+<Axes: >
+*** NameError: name 'y' is not defined
+<matplotlib.lines.Line2D object at 0x7f4bc2667fa0>
+(0.0, 1.0)
+Text(0.5, 1.0, 'Endmember 1')
+<Figure size 1000x63000 with 0 Axes>
+*** NameError: name 'a' is not defined
+<Axes: >
+*** NameError: name 'y' is not defined
+<matplotlib.lines.Line2D object at 0x7f489b9f56f0>
+(0.0, 1.0)
+Text(0.5, 1.0, 'Endmember 1')
+*** IndentationError: expected an indented block after 'for' statement on line 1
+<Figure size 1000x1500 with 0 Axes>
+*** IndentationError: expected an indented block after 'for' statement on line 1
+*** NameError: name 'start_idx' is not defined
+*** NameError: name 'a' is not defined
+*** NameError: name 'j' is not defined
+*** NameError: name 'y' is not defined
+<matplotlib.lines.Line2D object at 0x7f4779c629e0>
+(0.0, 1.0)
+Text(0.5, 1.0, 'Endmember 1')
+*** NameError: name 'a' is not defined
+*** NameError: name 'y' is not defined
+<matplotlib.lines.Line2D object at 0x7f4cd3ac9570>
+(0.0, 1.0)
+Text(0.5, 1.0, 'Endmember 1')
+*** NameError: name 'a' is not defined
+*** NameError: name 'y' is not defined
+<matplotlib.lines.Line2D object at 0x7f4cd3ac8730>
+(0.0, 1.0)
+Text(0.5, 1.0, 'Endmember 2')
+*** NameError: name 'a' is not defined
+*** NameError: name 'y' is not defined
+<matplotlib.lines.Line2D object at 0x7f49f2312530>
+(0.0, 1.0)
+Text(0.5, 1.0, 'Endmember 3')
+*** NameError: name 'a' is not defined
+*** NameError: name 'y' is not defined
+<matplotlib.lines.Line2D object at 0x7f49f234ec50>
+(0.0, 1.0)
+Text(0.5, 1.0, 'Endmember 4')
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 267, in <module>
+    with torch.no_grad():
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 267, in <module>
+    with torch.no_grad():
+  File "/usr/lib/python3.10/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.10/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 267, in <module>
+    with torch.no_grad():
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 267, in <module>
+    with torch.no_grad():
+  File "/usr/lib/python3.10/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.10/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

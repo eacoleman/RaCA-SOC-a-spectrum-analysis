@@ -1,0 +1,48 @@
+
+Loaded txt
+Using 1D Conv Model with Uncertainties
+  0%|          | 0/10000 [00:00<?, ?it/s]
+> /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py(255)<module>()
+-> loss = encoder_loss + decoder_loss + kl_Loss * 0.1 # adjust weight
+> /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py(255)<module>()
+-> loss = encoder_loss + decoder_loss + kl_Loss * 0.1 # adjust weight
+> /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py(255)<module>()
+-> loss = encoder_loss + decoder_loss + kl_Loss * 0.1 # adjust weight
+> /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py(255)<module>()
+-> loss = encoder_loss + decoder_loss + kl_Loss * 0.1 # adjust weight
+> /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py(255)<module>()
+-> loss = encoder_loss + decoder_loss + kl_Loss * 0.1 # adjust weight
+> /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py(255)<module>()
+-> loss = encoder_loss + decoder_loss + kl_Loss * 0.1 # adjust weight
+> /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py(255)<module>()
+-> loss = encoder_loss + decoder_loss + kl_Loss * 0.1 # adjust weight
+> /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py(255)<module>()
+-> loss = encoder_loss + decoder_loss + kl_Loss * 0.1 # adjust weight
+> /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py(255)<module>()
+-> loss = encoder_loss + decoder_loss + kl_Loss * 0.1 # adjust weight
+> /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py(255)<module>()
+-> loss = encoder_loss + decoder_loss + kl_Loss * 0.1 # adjust weight
+> /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py(255)<module>()
+-> loss = encoder_loss + decoder_loss + kl_Loss * 0.1 # adjust weight
+> /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py(255)<module>()
+-> loss = encoder_loss + decoder_loss + kl_Loss * 0.1 # adjust weight
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 255, in <module>
+    loss = encoder_loss + decoder_loss + kl_Loss * 0.1 # adjust weight
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 255, in <module>
+    loss = encoder_loss + decoder_loss + kl_Loss * 0.1 # adjust weight
+  File "/usr/lib/python3.10/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.10/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 255, in <module>
+    loss = encoder_loss + decoder_loss + kl_Loss * 0.1 # adjust weight
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 255, in <module>
+    loss = encoder_loss + decoder_loss + kl_Loss * 0.1 # adjust weight
+  File "/usr/lib/python3.10/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.10/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

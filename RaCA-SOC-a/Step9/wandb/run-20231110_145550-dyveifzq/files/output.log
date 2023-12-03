@@ -1,0 +1,287 @@
+
+Loaded txt
+Using 1D Conv Model with Uncertainties
+  0%|          | 0/100 [00:00<?, ?it/s]
+Epoch 0: Encoder Loss: 6.8306, Decoder Loss: 0.0246
+Validation - Encoder Loss: 1.1780, Decoder Loss: 0.0233
+Epoch 1: Encoder Loss: 0.9104, Decoder Loss: 0.0204
+Validation - Encoder Loss: 0.7073, Decoder Loss: 0.0154
+Epoch 2: Encoder Loss: 0.8027, Decoder Loss: 0.0090
+Validation - Encoder Loss: 0.6559, Decoder Loss: 0.0043
+Epoch 3: Encoder Loss: 0.6178, Decoder Loss: 0.0025
+Validation - Encoder Loss: 0.5608, Decoder Loss: 0.0014
+Epoch 4: Encoder Loss: 0.6635, Decoder Loss: 0.0010
+Validation - Encoder Loss: 1.1183, Decoder Loss: 0.0007
+Epoch 5: Encoder Loss: 0.5965, Decoder Loss: 0.0006
+Validation - Encoder Loss: 0.6704, Decoder Loss: 0.0005
+Epoch 6: Encoder Loss: 0.5602, Decoder Loss: 0.0005
+Validation - Encoder Loss: 0.4444, Decoder Loss: 0.0005
+Epoch 7: Encoder Loss: 0.5427, Decoder Loss: 0.0004
+Validation - Encoder Loss: 0.5691, Decoder Loss: 0.0004
+Epoch 8: Encoder Loss: 0.5195, Decoder Loss: 0.0004
+Validation - Encoder Loss: 0.5916, Decoder Loss: 0.0004
+Epoch 9: Encoder Loss: 0.4908, Decoder Loss: 0.0004
+Validation - Encoder Loss: 0.7074, Decoder Loss: 0.0005
+Epoch 10: Encoder Loss: 0.4795, Decoder Loss: 0.0003
+Validation - Encoder Loss: 0.5294, Decoder Loss: 0.0004
+Epoch 11: Encoder Loss: 0.4955, Decoder Loss: 0.0003
+Validation - Encoder Loss: 0.7988, Decoder Loss: 0.0004
+Epoch 12: Encoder Loss: 0.4493, Decoder Loss: 0.0003
+Validation - Encoder Loss: 0.3596, Decoder Loss: 0.0003
+Epoch 13: Encoder Loss: 0.4188, Decoder Loss: 0.0003
+Validation - Encoder Loss: 0.6302, Decoder Loss: 0.0003
+Epoch 14: Encoder Loss: 0.4081, Decoder Loss: 0.0003
+Validation - Encoder Loss: 0.5435, Decoder Loss: 0.0003
+Epoch 15: Encoder Loss: 0.3949, Decoder Loss: 0.0003
+Validation - Encoder Loss: 0.3382, Decoder Loss: 0.0003
+Epoch 16: Encoder Loss: 0.3934, Decoder Loss: 0.0003
+Validation - Encoder Loss: 0.3930, Decoder Loss: 0.0002
+Epoch 17: Encoder Loss: 0.3737, Decoder Loss: 0.0003
+Validation - Encoder Loss: 0.3189, Decoder Loss: 0.0002
+Epoch 18: Encoder Loss: 0.4097, Decoder Loss: 0.0003
+Validation - Encoder Loss: 0.5066, Decoder Loss: 0.0003
+Epoch 19: Encoder Loss: 0.3345, Decoder Loss: 0.0002
+Validation - Encoder Loss: 0.2793, Decoder Loss: 0.0002
+Epoch 20: Encoder Loss: 0.3380, Decoder Loss: 0.0002
+Validation - Encoder Loss: 0.3383, Decoder Loss: 0.0002
+Epoch 21: Encoder Loss: 0.3280, Decoder Loss: 0.0002
+Validation - Encoder Loss: 0.7244, Decoder Loss: 0.0003
+Epoch 22: Encoder Loss: 0.3099, Decoder Loss: 0.0002
+Validation - Encoder Loss: 0.2333, Decoder Loss: 0.0002
+Epoch 23: Encoder Loss: 0.2786, Decoder Loss: 0.0002
+Validation - Encoder Loss: 0.2650, Decoder Loss: 0.0002
+Epoch 24: Encoder Loss: 0.2451, Decoder Loss: 0.0002
+Validation - Encoder Loss: 0.2008, Decoder Loss: 0.0002
+Epoch 25: Encoder Loss: 0.2447, Decoder Loss: 0.0002
+Validation - Encoder Loss: 0.2040, Decoder Loss: 0.0002
+Epoch 26: Encoder Loss: 0.2708, Decoder Loss: 0.0002
+Validation - Encoder Loss: 0.1968, Decoder Loss: 0.0002
+Epoch 27: Encoder Loss: 0.2406, Decoder Loss: 0.0002
+Validation - Encoder Loss: 0.4505, Decoder Loss: 0.0002
+Epoch 28: Encoder Loss: 0.2103, Decoder Loss: 0.0002
+Validation - Encoder Loss: 0.2987, Decoder Loss: 0.0002
+Epoch 29: Encoder Loss: 0.2079, Decoder Loss: 0.0002
+Validation - Encoder Loss: 0.1818, Decoder Loss: 0.0001
+Epoch 30: Encoder Loss: 0.2067, Decoder Loss: 0.0001
+Validation - Encoder Loss: 0.3350, Decoder Loss: 0.0002
+Epoch 31: Encoder Loss: 0.1856, Decoder Loss: 0.0001
+Validation - Encoder Loss: 0.1590, Decoder Loss: 0.0001
+Epoch 32: Encoder Loss: 0.1864, Decoder Loss: 0.0001
+Validation - Encoder Loss: 0.1651, Decoder Loss: 0.0001
+Epoch 33: Encoder Loss: 0.1649, Decoder Loss: 0.0001
+Validation - Encoder Loss: 0.1897, Decoder Loss: 0.0001
+Epoch 34: Encoder Loss: 0.1779, Decoder Loss: 0.0001
+Validation - Encoder Loss: 0.1483, Decoder Loss: 0.0001
+Epoch 35: Encoder Loss: 0.1586, Decoder Loss: 0.0001
+Validation - Encoder Loss: 0.1381, Decoder Loss: 0.0001
+Epoch 36: Encoder Loss: 0.1605, Decoder Loss: 0.0001
+Validation - Encoder Loss: 0.1319, Decoder Loss: 0.0001
+Epoch 37: Encoder Loss: 0.1484, Decoder Loss: 0.0001
+Validation - Encoder Loss: 0.1281, Decoder Loss: 0.0001
+Epoch 38: Encoder Loss: 0.1456, Decoder Loss: 0.0001
+Validation - Encoder Loss: 0.1171, Decoder Loss: 0.0001
+Epoch 39: Encoder Loss: 0.1443, Decoder Loss: 0.0001
+Validation - Encoder Loss: 0.1172, Decoder Loss: 0.0001
+Epoch 40: Encoder Loss: 0.1336, Decoder Loss: 0.0001
+Validation - Encoder Loss: 0.1117, Decoder Loss: 0.0001
+Epoch 41: Encoder Loss: 0.1343, Decoder Loss: 0.0001
+Validation - Encoder Loss: 0.1114, Decoder Loss: 0.0001
+Epoch 42: Encoder Loss: 0.1251, Decoder Loss: 0.0001
+Validation - Encoder Loss: 0.1380, Decoder Loss: 0.0001
+Epoch 43: Encoder Loss: 0.1307, Decoder Loss: 0.0001
+Validation - Encoder Loss: 0.1036, Decoder Loss: 0.0001
+Epoch 44: Encoder Loss: 0.1222, Decoder Loss: 0.0001
+Validation - Encoder Loss: 0.1017, Decoder Loss: 0.0001
+Epoch 45: Encoder Loss: 0.1226, Decoder Loss: 0.0001
+Validation - Encoder Loss: 0.1118, Decoder Loss: 0.0001
+Epoch 46: Encoder Loss: 0.1243, Decoder Loss: 0.0001
+Validation - Encoder Loss: 0.1017, Decoder Loss: 0.0001
+Epoch 47: Encoder Loss: 0.1320, Decoder Loss: 0.0001
+Validation - Encoder Loss: 0.0995, Decoder Loss: 0.0000
+Epoch 48: Encoder Loss: 0.1276, Decoder Loss: 0.0001
+Validation - Encoder Loss: 0.1056, Decoder Loss: 0.0001
+Epoch 49: Encoder Loss: 0.1161, Decoder Loss: 0.0001
+Validation - Encoder Loss: 0.1671, Decoder Loss: 0.0001
+Epoch 50: Encoder Loss: 0.1211, Decoder Loss: 0.0001
+Validation - Encoder Loss: 0.0950, Decoder Loss: 0.0001
+Epoch 51: Encoder Loss: 0.1109, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.1347, Decoder Loss: 0.0001
+Epoch 52: Encoder Loss: 0.1148, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0942, Decoder Loss: 0.0001
+Epoch 53: Encoder Loss: 0.1140, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.1179, Decoder Loss: 0.0001
+Epoch 54: Encoder Loss: 0.1072, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0963, Decoder Loss: 0.0000
+Epoch 55: Encoder Loss: 0.1115, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0927, Decoder Loss: 0.0001
+Epoch 56: Encoder Loss: 0.1112, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.1053, Decoder Loss: 0.0000
+Epoch 57: Encoder Loss: 0.1139, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0901, Decoder Loss: 0.0000
+Epoch 58: Encoder Loss: 0.1040, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0870, Decoder Loss: 0.0000
+Epoch 59: Encoder Loss: 0.1040, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.1058, Decoder Loss: 0.0000
+Epoch 60: Encoder Loss: 0.0983, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0838, Decoder Loss: 0.0000
+Epoch 61: Encoder Loss: 0.0974, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0828, Decoder Loss: 0.0000
+Epoch 62: Encoder Loss: 0.1049, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0998, Decoder Loss: 0.0000
+Epoch 63: Encoder Loss: 0.0990, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0892, Decoder Loss: 0.0000
+Epoch 64: Encoder Loss: 0.0980, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0962, Decoder Loss: 0.0000
+Epoch 65: Encoder Loss: 0.0949, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0839, Decoder Loss: 0.0000
+Epoch 66: Encoder Loss: 0.0921, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0912, Decoder Loss: 0.0000
+Epoch 67: Encoder Loss: 0.0917, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0774, Decoder Loss: 0.0000
+Epoch 68: Encoder Loss: 0.0856, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0742, Decoder Loss: 0.0000
+Epoch 69: Encoder Loss: 0.0898, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.1056, Decoder Loss: 0.0000
+Epoch 70: Encoder Loss: 0.0902, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0779, Decoder Loss: 0.0000
+Epoch 71: Encoder Loss: 0.0898, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0857, Decoder Loss: 0.0000
+Epoch 72: Encoder Loss: 0.0813, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0734, Decoder Loss: 0.0000
+Epoch 73: Encoder Loss: 0.0786, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0692, Decoder Loss: 0.0000
+Epoch 74: Encoder Loss: 0.0798, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0678, Decoder Loss: 0.0000
+Epoch 75: Encoder Loss: 0.0763, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0710, Decoder Loss: 0.0000
+Epoch 76: Encoder Loss: 0.0750, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0652, Decoder Loss: 0.0000
+Epoch 77: Encoder Loss: 0.0743, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0641, Decoder Loss: 0.0000
+Epoch 78: Encoder Loss: 0.0704, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0617, Decoder Loss: 0.0000
+Epoch 79: Encoder Loss: 0.0698, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0662, Decoder Loss: 0.0000
+Epoch 80: Encoder Loss: 0.0693, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0784, Decoder Loss: 0.0000
+Epoch 81: Encoder Loss: 0.0690, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0566, Decoder Loss: 0.0000
+Epoch 82: Encoder Loss: 0.0668, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0540, Decoder Loss: 0.0000
+Epoch 83: Encoder Loss: 0.0617, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0532, Decoder Loss: 0.0000
+Epoch 84: Encoder Loss: 0.0619, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0622, Decoder Loss: 0.0000
+Epoch 85: Encoder Loss: 0.0596, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0613, Decoder Loss: 0.0000
+Epoch 86: Encoder Loss: 0.0622, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0488, Decoder Loss: 0.0000
+Epoch 87: Encoder Loss: 0.0595, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.1038, Decoder Loss: 0.0000
+Epoch 88: Encoder Loss: 0.0554, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0476, Decoder Loss: 0.0000
+Epoch 89: Encoder Loss: 0.0538, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0452, Decoder Loss: 0.0000
+Epoch 90: Encoder Loss: 0.0542, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0484, Decoder Loss: 0.0000
+Epoch 91: Encoder Loss: 0.0507, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0472, Decoder Loss: 0.0000
+Epoch 92: Encoder Loss: 0.0499, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0411, Decoder Loss: 0.0000
+Epoch 93: Encoder Loss: 0.0468, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0414, Decoder Loss: 0.0000
+Epoch 94: Encoder Loss: 0.0458, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0387, Decoder Loss: 0.0000
+Epoch 95: Encoder Loss: 0.0453, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0382, Decoder Loss: 0.0000
+Epoch 96: Encoder Loss: 0.0429, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0364, Decoder Loss: 0.0000
+Epoch 97: Encoder Loss: 0.0434, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0390, Decoder Loss: 0.0000
+Epoch 98: Encoder Loss: 0.0432, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0467, Decoder Loss: 0.0000
+Epoch 99: Encoder Loss: 0.0406, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.0548, Decoder Loss: 0.0000
+> /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py(297)<module>()
+-> from scipy.stats import norm
+*** AttributeError: 'list' object has no attribute 'shape'
+121376
+90
+*** TypeError: object of type 'numpy.float32' has no len()
+array([1.35942045e-07, 1.26471434e-07, 1.20687019e-07, 1.20948116e-07,
+       1.27867580e-07, 1.42010265e-07, 1.16483172e-07, 1.59248216e-07,
+       1.24871931e-07, 1.16153920e-07, 1.28055987e-07, 1.31927777e-07,
+       1.20304932e-07, 1.23613958e-07, 1.32028475e-07, 1.38449664e-07,
+       1.32014122e-07, 1.42133558e-07, 1.24382495e-07, 1.15950606e-07,
+       1.14767197e-07, 1.27122973e-07, 1.49346704e-07, 1.43151084e-07,
+       1.18354976e-07, 1.38318740e-07, 1.30021732e-07, 1.58522425e-07,
+       1.14698487e-07, 1.27819405e-07, 1.53727285e-07, 1.43000435e-07,
+       1.25614150e-07, 1.04854898e-07, 1.35804044e-07, 1.17345934e-07,
+       1.21600166e-07, 1.29562011e-07, 1.26341959e-07, 1.32446900e-07,
+       1.96713586e-07, 1.27206150e-07, 1.55890277e-07, 1.28935611e-07,
+       1.31579611e-07, 1.29738339e-07, 1.56353167e-07, 1.25820350e-07,
+       1.33577387e-07, 1.36840328e-07, 1.27963574e-07, 1.29424080e-07,
+       1.19239346e-07, 1.25908457e-07, 1.30768726e-07, 1.26465878e-07,
+       1.34708273e-07, 1.11582125e-07, 1.31874941e-07, 1.26147157e-07,
+       1.19248327e-07, 1.16901383e-07, 1.24298779e-07, 1.19476098e-07,
+       1.22449450e-07, 1.44482300e-07, 1.29794017e-07, 1.11338281e-07,
+       1.27775166e-07, 1.29359535e-07, 1.45348267e-07, 1.20848597e-07,
+       1.14985433e-07, 1.34267964e-07, 1.22867533e-07, 1.32912291e-07,
+       1.66616701e-07, 1.16204227e-07, 1.43849860e-07, 1.21221092e-07,
+       1.26374488e-07, 1.39577324e-07, 1.22178363e-07, 1.59715469e-07,
+       1.42523660e-07, 1.24065949e-07, 1.36872288e-07, 1.33618414e-07,
+       1.18307128e-07, 4.04819060e-04], dtype=float32)
+tensor([[-5.7717e-04, -3.0089e-03,  7.9963e-04,  ...,  9.8934e-05,
+          2.1168e-03,  7.3784e-03],
+        [-5.9223e-04, -3.0789e-03,  5.3739e-04,  ..., -1.5776e-04,
+          1.1598e-03,  2.9784e-02],
+        [-7.4240e-04, -1.7389e-03, -5.9678e-04,  ..., -1.3657e-04,
+         -3.7997e-03,  1.4380e-01],
+        ...,
+        [-8.6597e-04, -1.7366e-03,  6.8533e-04,  ...,  1.4177e-05,
+          1.5869e-03,  1.3709e-02],
+        [-8.4421e-04, -3.0648e-03,  6.7343e-04,  ...,  2.9940e-04,
+          1.4085e-03,  4.1584e-03],
+        [-1.0921e-03, -1.8474e-03,  6.3334e-04,  ...,  4.1115e-04,
+          1.3032e-03, -6.3330e-03]], device='cuda:0', grad_fn=<AddmmBackward0>)
+torch.Size([12, 90])
+tensor([-5.7717e-04, -3.0089e-03,  7.9963e-04, -1.1888e-03,  2.7243e-03,
+        -4.1778e-04,  1.0438e-03,  5.1242e-04,  3.8348e-03,  1.5916e-03,
+        -9.3458e-04,  1.0978e-03,  8.3835e-04,  2.4723e-03,  5.6791e-04,
+         5.3973e-04,  9.9479e-04,  9.7484e-04,  1.8708e-03,  1.4927e-03,
+        -3.2057e-03, -3.4503e-04,  4.0151e-03,  3.5237e-03, -1.7234e-03,
+         8.0751e-04,  1.9658e-03,  2.2269e-03,  1.3637e-03, -5.2974e-06,
+         1.5354e-03, -4.8976e-04,  1.6940e-03, -4.5516e-05,  1.9183e-03,
+        -1.1716e-03,  2.7489e-04,  9.6026e-04,  1.4147e-03,  2.5293e-05,
+        -1.4949e-03,  2.8124e-04,  4.0073e-03,  2.2987e-03, -3.1172e-03,
+        -1.4489e-04, -3.1187e-04,  2.8693e-03,  2.5987e-03,  1.3772e-03,
+         1.8518e-03, -7.1647e-05, -7.8186e-04, -7.9721e-04,  5.6408e-04,
+        -8.3066e-04, -1.4282e-05,  2.8767e-04,  7.1598e-04,  1.1049e-03,
+         7.2917e-04,  2.3241e-03,  3.2242e-03, -6.3224e-04,  1.0894e-03,
+         2.9520e-04,  2.6672e-04, -1.4064e-03, -2.3498e-04, -1.7467e-03,
+         1.3342e-03, -1.2932e-03,  1.6272e-03,  7.8455e-04,  3.5796e-03,
+        -1.1853e-03,  2.0201e-03, -1.4919e-03, -7.9349e-04, -6.7754e-04,
+        -4.3556e-04, -5.4127e-04,  7.2175e-04, -4.6191e-04,  4.2644e-04,
+         1.2766e-03, -1.2425e-04,  9.8934e-05,  2.1168e-03,  7.3784e-03],
+       device='cuda:0', grad_fn=<SelectBackward0>)
+torch.Size([90])
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 297, in <module>
+    from scipy.stats import norm
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 297, in <module>
+    from scipy.stats import norm
+  File "/usr/lib/python3.10/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.10/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 297, in <module>
+    from scipy.stats import norm
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 297, in <module>
+    from scipy.stats import norm
+  File "/usr/lib/python3.10/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.10/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

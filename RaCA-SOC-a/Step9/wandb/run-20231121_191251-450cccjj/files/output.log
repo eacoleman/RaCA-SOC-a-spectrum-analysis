@@ -1,0 +1,42 @@
+
+Loaded txt
+Using 1D Conv Model with Uncertainties
+  0%|          | 0/10000 [00:00<?, ?it/s]
+Epoch 0: Encoder Loss: nan, Decoder Loss: nan
+Validation - Encoder Loss: nan, Decoder Loss: nan
+Epoch 1: Encoder Loss: nan, Decoder Loss: nan
+Validation - Encoder Loss: nan, Decoder Loss: nan
+Epoch 2: Encoder Loss: nan, Decoder Loss: nan
+Validation - Encoder Loss: nan, Decoder Loss: nan
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 260, in <module>
+    encoder_optimizer.step()
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/optim/optimizer.py", line 280, in wrapper
+    out = func(*args, **kwargs)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/optim/optimizer.py", line 33, in _use_grad
+    ret = func(self, *args, **kwargs)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/optim/adam.py", line 141, in step
+    adam(
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/optim/adam.py", line 262, in adam
+    _, foreach = _default_to_fused_or_foreach(params, differentiable, use_fused=False)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/optim/optimizer.py", line 72, in _default_to_fused_or_foreach
+    foreach = not fused and all(
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/optim/optimizer.py", line 72, in <genexpr>
+    foreach = not fused and all(
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 260, in <module>
+    encoder_optimizer.step()
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/optim/optimizer.py", line 280, in wrapper
+    out = func(*args, **kwargs)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/optim/optimizer.py", line 33, in _use_grad
+    ret = func(self, *args, **kwargs)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/optim/adam.py", line 141, in step
+    adam(
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/optim/adam.py", line 262, in adam
+    _, foreach = _default_to_fused_or_foreach(params, differentiable, use_fused=False)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/optim/optimizer.py", line 72, in _default_to_fused_or_foreach
+    foreach = not fused and all(
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/optim/optimizer.py", line 72, in <genexpr>
+    foreach = not fused and all(
+KeyboardInterrupt

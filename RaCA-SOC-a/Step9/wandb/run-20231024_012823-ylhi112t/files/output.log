@@ -1,0 +1,51 @@
+
+Loaded txt
+> /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py(121)<module>()
+-> tMs_train = torch.tensor(y_train.tolist())
+Using 1D Conv Model
+  0%|          | 0/20 [00:00<?, ?it/s]
+Epoch 0: Encoder Loss: 2.9397, Decoder Loss: 0.0128
+Validation - Encoder Loss: 1.5229, Decoder Loss: 0.0092
+Epoch 1: Encoder Loss: 0.9435, Decoder Loss: 0.0134
+Validation - Encoder Loss: 0.8700, Decoder Loss: 0.0131
+Epoch 2: Encoder Loss: 0.4805, Decoder Loss: 0.0148
+Validation - Encoder Loss: 0.3482, Decoder Loss: 0.0148
+Epoch 3: Encoder Loss: 0.3312, Decoder Loss: 0.0153
+Validation - Encoder Loss: 0.2816, Decoder Loss: 0.0152
+Epoch 4: Encoder Loss: 0.2831, Decoder Loss: 0.0154
+Validation - Encoder Loss: 0.2701, Decoder Loss: 0.0153
+Epoch 5: Encoder Loss: 0.2665, Decoder Loss: 0.0150
+Validation - Encoder Loss: 0.2641, Decoder Loss: 0.0145
+Epoch 6: Encoder Loss: 0.2631, Decoder Loss: 0.0144
+Validation - Encoder Loss: 0.2561, Decoder Loss: 0.0142
+Epoch 7: Encoder Loss: 0.2502, Decoder Loss: 0.0138
+Validation - Encoder Loss: 0.2752, Decoder Loss: 0.0127
+Epoch 8: Encoder Loss: 0.2458, Decoder Loss: 0.0132
+Validation - Encoder Loss: 0.2246, Decoder Loss: 0.0129
+Epoch 9: Encoder Loss: 0.2396, Decoder Loss: 0.0126
+Validation - Encoder Loss: 0.2222, Decoder Loss: 0.0118
+Epoch 10: Encoder Loss: 0.2334, Decoder Loss: 0.0122
+Validation - Encoder Loss: 0.2254, Decoder Loss: 0.0111
+Epoch 11: Encoder Loss: 0.2374, Decoder Loss: 0.0116
+Validation - Encoder Loss: 0.2107, Decoder Loss: 0.0113
+Epoch 12: Encoder Loss: 0.2281, Decoder Loss: 0.0110
+Validation - Encoder Loss: 0.2296, Decoder Loss: 0.0101
+Epoch 13: Encoder Loss: 0.2249, Decoder Loss: 0.0104
+Validation - Encoder Loss: 0.2156, Decoder Loss: 0.0093
+Epoch 14: Encoder Loss: 0.2246, Decoder Loss: 0.0092
+Validation - Encoder Loss: 0.2109, Decoder Loss: 0.0070
+Epoch 15: Encoder Loss: 0.2219, Decoder Loss: 0.0050
+Validation - Encoder Loss: 0.2140, Decoder Loss: 0.0032
+Epoch 16: Encoder Loss: 0.2142, Decoder Loss: 0.0025
+Validation - Encoder Loss: 0.2021, Decoder Loss: 0.0011
+Epoch 17: Encoder Loss: 0.2091, Decoder Loss: 0.0007
+Validation - Encoder Loss: 0.1950, Decoder Loss: 0.0004
+Epoch 18: Encoder Loss: 0.2073, Decoder Loss: 0.0003
+Validation - Encoder Loss: 0.2469, Decoder Loss: 0.0002
+Epoch 19: Encoder Loss: 0.2013, Decoder Loss: 0.0002
+Validation - Encoder Loss: 0.1984, Decoder Loss: 0.0001
+> /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py(258)<module>()
+-> total_params = sum(p.numel() for p in encoder_model.parameters())
+8723450
+Total parameters: 8723450
+Total parameters decoder: 193591

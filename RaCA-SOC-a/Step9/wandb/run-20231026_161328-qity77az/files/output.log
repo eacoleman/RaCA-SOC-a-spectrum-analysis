@@ -1,0 +1,13 @@
+
+Loaded txt
+> /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py(132)<module>()
+-> batch_size = args.batch  # You can adjust this as needed
+Using 1D Conv Model with Uncertainties
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 149, in <module>
+    encoder_model = EncoderConv1DWithUncertainty(MSpectra, KEndmembers, 32, 15).to(device) # (M, K, hidden_size, kernel_size)
+NameError: name 'EncoderConv1DWithUncertainty' is not defined
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 149, in <module>
+    encoder_model = EncoderConv1DWithUncertainty(MSpectra, KEndmembers, 32, 15).to(device) # (M, K, hidden_size, kernel_size)
+NameError: name 'EncoderConv1DWithUncertainty' is not defined

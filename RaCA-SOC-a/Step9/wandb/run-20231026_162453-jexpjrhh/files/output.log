@@ -1,0 +1,184 @@
+
+Loaded txt
+Using 1D Conv Model with Uncertainties
+  0%|          | 0/20 [00:00<?, ?it/s]
+Epoch 0: Encoder Loss: 1.6351, Decoder Loss: 0.0016
+Validation - Encoder Loss: 0.9877, Decoder Loss: 0.0002
+Epoch 1: Encoder Loss: 0.8425, Decoder Loss: 0.0001
+Validation - Encoder Loss: 0.6861, Decoder Loss: 0.0000
+Epoch 2: Encoder Loss: 0.7038, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.6065, Decoder Loss: 0.0000
+Epoch 3: Encoder Loss: 0.6481, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.5463, Decoder Loss: 0.0000
+Epoch 4: Encoder Loss: 0.5757, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.4966, Decoder Loss: 0.0000
+Epoch 5: Encoder Loss: 0.5240, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.5121, Decoder Loss: 0.0000
+Epoch 6: Encoder Loss: 0.4869, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.4290, Decoder Loss: 0.0000
+Epoch 7: Encoder Loss: 0.4455, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.3820, Decoder Loss: 0.0000
+Epoch 8: Encoder Loss: 0.4038, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.3724, Decoder Loss: 0.0000
+Epoch 9: Encoder Loss: 0.3894, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.3988, Decoder Loss: 0.0000
+Epoch 10: Encoder Loss: 0.3612, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.5469, Decoder Loss: 0.0000
+Epoch 11: Encoder Loss: 0.3339, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.2830, Decoder Loss: 0.0000
+Epoch 12: Encoder Loss: 0.3040, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.3298, Decoder Loss: 0.0000
+Epoch 13: Encoder Loss: 0.2841, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.2731, Decoder Loss: 0.0000
+Epoch 14: Encoder Loss: 0.2725, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.2686, Decoder Loss: 0.0000
+Epoch 15: Encoder Loss: 0.2532, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.2287, Decoder Loss: 0.0000
+Epoch 16: Encoder Loss: 0.2395, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.2194, Decoder Loss: 0.0000
+Epoch 17: Encoder Loss: 0.2321, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.1902, Decoder Loss: 0.0000
+Epoch 18: Encoder Loss: 0.2171, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.1971, Decoder Loss: 0.0000
+Epoch 19: Encoder Loss: 0.2088, Decoder Loss: 0.0000
+Validation - Encoder Loss: 0.1704, Decoder Loss: 0.0000
+> /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py(262)<module>()
+-> total_params = sum(p.numel() for p in encoder_model.parameters())
+(torch.Size([12, 90]), torch.Size([20, 90]))
+tensor([[-9.4381e-02, -1.5076e-03,  1.4392e-01,  ...,  1.2677e-01,
+          1.0192e-01,  1.0896e-01],
+        [ 1.6111e-01, -1.8565e-03, -2.2990e-01,  ..., -4.8136e-03,
+         -3.0357e-01,  1.5891e-01],
+        [-9.4941e-04, -2.0902e-03, -1.5433e-01,  ...,  1.4259e-01,
+         -3.2634e-01, -1.0278e-01],
+        ...,
+        [ 1.2954e-01,  2.6607e-04,  5.4253e-02,  ..., -1.3701e-02,
+          2.9886e-01, -1.2460e-02],
+        [ 7.2011e-02, -1.2484e-03, -3.6911e-02,  ...,  1.2257e-01,
+          1.9272e-01,  1.3624e-02],
+        [ 1.5325e-03, -8.9424e-03, -8.5687e-02,  ..., -1.1870e-01,
+         -2.2929e-02,  4.6502e-02]], device='cuda:0', grad_fn=<MulBackward0>)
+*** IndentationError: expected an indented block after 'with' statement on line 1
+*** IndentationError: expected an indented block after 'with' statement on line 1
+*** SyntaxError: invalid syntax
+<Figure size 1400x500 with 0 Axes>
+<Figure size 1400x500 with 0 Axes>
+*** SyntaxError: invalid syntax
+<Axes: >
+*** RuntimeError: Can't call numpy() on Tensor that requires grad. Use tensor.detach().numpy() instead.
+Text(0.5, 1.0, 'Predictions for a Validation Sample')
+<matplotlib.legend.Legend object at 0x7f76151bb430>
+<matplotlib.legend.Legend object at 0x7f76151b8820>
+*** SyntaxError: invalid syntax
+<Axes: >
+*** RuntimeError: Can't call numpy() on Tensor that requires grad. Use tensor.detach().numpy() instead.
+(0.0, 1.0)
+Text(0.5, 1.0, 'Uncertainties for a Validation Sample')
+<matplotlib.legend.Legend object at 0x7f773ae208e0>
+<matplotlib.legend.Legend object at 0x7f773ae209d0>
+No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+*** IndentationError: expected an indented block after 'with' statement on line 1
+*** SyntaxError: invalid syntax
+<Figure size 1400x500 with 0 Axes>
+<Figure size 1400x500 with 0 Axes>
+*** SyntaxError: invalid syntax
+<Axes: >
+*** RuntimeError: Can't call numpy() on Tensor that requires grad. Use tensor.detach().numpy() instead.
+Text(0.5, 1.0, 'Predictions for a Validation Sample')
+<matplotlib.legend.Legend object at 0x7f7a926e3f40>
+<matplotlib.legend.Legend object at 0x7f7a926e3fa0>
+*** SyntaxError: invalid syntax
+<Axes: >
+*** RuntimeError: Can't call numpy() on Tensor that requires grad. Use tensor.detach().numpy() instead.
+(0.0, 1.0)
+Text(0.5, 1.0, 'Uncertainties for a Validation Sample')
+<matplotlib.legend.Legend object at 0x7f7a92726da0>
+<matplotlib.legend.Legend object at 0x7f7a92724280>
+No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+<Figure size 1400x500 with 0 Axes>
+<Figure size 1400x500 with 0 Axes>
+<Axes: >
+[<matplotlib.lines.Line2D object at 0x7f7a5d6e91b0>]
+Text(0.5, 1.0, 'Predictions for a Validation Sample')
+<matplotlib.legend.Legend object at 0x7f7a5d70e560>
+<Axes: >
+[<matplotlib.lines.Line2D object at 0x7f7a5d6bec80>]
+(0.0, 1.0)
+Text(0.5, 1.0, 'Uncertainties for a Validation Sample')
+<matplotlib.legend.Legend object at 0x7f7a5d6e8f10>
+tensor([[0.4745, 0.4750, 0.4764,  ..., 0.7280, 0.7276, 0.7278]],
+       device='cuda:0')
+*** AttributeError: 'Tensor' object has no attribute 'shaoe'
+torch.Size([1, 2151])
+torch.Size([1, 2151])
+torch.Size([1, 2151])
+torch.Size([1, 2151])
+<Figure size 1400x5000 with 0 Axes>
+*** IndentationError: expected an indented block after 'for' statement on line 1
+*** SyntaxError: invalid syntax
+*** NameError: name 'i' is not defined
+*** NameError: name 'i' is not defined
+*** NameError: name 'i' is not defined
+<matplotlib.legend.Legend object at 0x7f7a5d62a200>
+<matplotlib.legend.Legend object at 0x7f7a5d64bfa0>
+*** SyntaxError: invalid syntax
+*** NameError: name 'i' is not defined
+*** NameError: name 'i' is not defined
+(0.0, 1.0)
+*** NameError: name 'i' is not defined
+<matplotlib.legend.Legend object at 0x7f776401d930>
+No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+*** SyntaxError: invalid syntax
+*** SyntaxError: invalid syntax
+<Axes: >
+[<matplotlib.lines.Line2D object at 0x7f7764046500>]
+Text(0.5, 1.0, 'Predictions for Sample 1')
+<matplotlib.legend.Legend object at 0x7f776401d3c0>
+<matplotlib.legend.Legend object at 0x7f7a5d64bbe0>
+*** SyntaxError: invalid syntax
+<Axes: >
+[<matplotlib.lines.Line2D object at 0x7f7764077760>]
+(0.0, 1.0)
+Text(0.5, 1.0, 'Uncertainties for Sample 1')
+<matplotlib.legend.Legend object at 0x7f776401d3c0>
+*** KeyboardInterrupt
+*** SyntaxError: invalid syntax
+<Axes: >
+[<matplotlib.lines.Line2D object at 0x7f7891852590>]
+Text(0.5, 1.0, 'Predictions for Sample 2')
+<matplotlib.legend.Legend object at 0x7f7891821960>
+<matplotlib.legend.Legend object at 0x7f7891822fb0>
+*** SyntaxError: invalid syntax
+<Axes: >
+[<matplotlib.lines.Line2D object at 0x7f78918b4af0>]
+(0.0, 1.0)
+Text(0.5, 1.0, 'Uncertainties for Sample 2')
+<matplotlib.legend.Legend object at 0x7f7891882620>
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 262, in <module>
+    # for pdb:
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 262, in <module>
+    # for pdb:
+  File "/usr/lib/python3.10/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.10/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 262, in <module>
+    # for pdb:
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 262, in <module>
+    # for pdb:
+  File "/usr/lib/python3.10/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.10/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

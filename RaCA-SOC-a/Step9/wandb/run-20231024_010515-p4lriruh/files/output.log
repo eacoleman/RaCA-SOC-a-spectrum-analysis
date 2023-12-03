@@ -1,0 +1,121 @@
+
+Loaded txt
+> /home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py(121)<module>()
+-> tMs_train = torch.tensor(y_train.tolist())
+((92245, 2151), (23062, 2151))
+((92245, 2151), (23062, 2151), (92245, 90), (23062, 90))
+(array([[0.4704558 , 0.47092536, 0.47218227, ..., 0.7333061 , 0.7328328 ,
+        0.7331514 ],
+       [0.4576326 , 0.4579725 , 0.45906833, ..., 0.72698176, 0.7265175 ,
+        0.72681576],
+       [0.4730523 , 0.4735879 , 0.47509527, ..., 0.7358605 , 0.7354087 ,
+        0.73569274],
+       ...,
+       [0.45795482, 0.45847768, 0.45992738, ..., 0.7273251 , 0.726897  ,
+        0.7272072 ],
+       [0.46089816, 0.46123052, 0.46236753, ..., 0.7252867 , 0.7248293 ,
+        0.7251294 ],
+       [0.46835166, 0.46902642, 0.47046432, ..., 0.7376704 , 0.73719203,
+        0.737446  ]], dtype=float32), array([[4.58930572e-03, 9.85955412e-05, 8.27272702e-03, ...,
+        6.66666660e-04, 8.27272702e-03, 1.24463765e-02],
+       [5.41733927e-04, 6.91235822e-04, 8.27272795e-03, ...,
+        6.66666718e-04, 8.27272795e-03, 9.96000096e-02],
+       [3.95308249e-03, 3.51630937e-04, 8.27272702e-03, ...,
+        6.66666660e-04, 8.27272702e-03, 6.68315403e-03],
+       ...,
+       [7.99157750e-03, 7.36500649e-03, 8.27272609e-03, ...,
+        6.66666601e-04, 8.27272609e-03, 4.89609223e-03],
+       [5.57715830e-04, 1.99367532e-05, 8.27272702e-03, ...,
+        6.66666660e-04, 8.27272702e-03, 9.51133892e-02],
+       [8.82226101e-04, 6.13802928e-04, 8.27272702e-03, ...,
+        6.66666660e-04, 8.27272702e-03, 5.99925779e-03]], dtype=float32))
+((92245, 2151), (23062, 2151), (92245, 90), (23062, 90))
+((6069, 2151), (6069, 90))
+Using 1D Conv Model
+  0%|          | 0/10000 [00:00<?, ?it/s]
+Epoch 0: Encoder Loss: 5.2692, Decoder Loss: 0.0126
+Validation - Encoder Loss: 2.3050, Decoder Loss: 0.0109
+Epoch 1: Encoder Loss: 2.1344, Decoder Loss: 0.0105
+Validation - Encoder Loss: 2.0491, Decoder Loss: 0.0100
+Epoch 2: Encoder Loss: 1.9043, Decoder Loss: 0.0094
+Validation - Encoder Loss: 1.8321, Decoder Loss: 0.0093
+Epoch 3: Encoder Loss: 1.6118, Decoder Loss: 0.0091
+Validation - Encoder Loss: 1.5221, Decoder Loss: 0.0089
+Epoch 4: Encoder Loss: 1.3173, Decoder Loss: 0.0089
+Validation - Encoder Loss: 1.1538, Decoder Loss: 0.0088
+Epoch 5: Encoder Loss: 0.9977, Decoder Loss: 0.0088
+Validation - Encoder Loss: 0.8286, Decoder Loss: 0.0088
+Epoch 6: Encoder Loss: 0.7297, Decoder Loss: 0.0089
+Validation - Encoder Loss: 0.6451, Decoder Loss: 0.0093
+Epoch 7: Encoder Loss: 0.5911, Decoder Loss: 0.0092
+Validation - Encoder Loss: 0.5552, Decoder Loss: 0.0093
+Epoch 8: Encoder Loss: 0.4777, Decoder Loss: 0.0089
+Validation - Encoder Loss: 0.4498, Decoder Loss: 0.0089
+Epoch 9: Encoder Loss: 0.4096, Decoder Loss: 0.0085
+Validation - Encoder Loss: 0.3966, Decoder Loss: 0.0082
+Epoch 10: Encoder Loss: 0.3583, Decoder Loss: 0.0082
+Validation - Encoder Loss: 0.3297, Decoder Loss: 0.0080
+Epoch 11: Encoder Loss: 0.3158, Decoder Loss: 0.0075
+Validation - Encoder Loss: 0.2977, Decoder Loss: 0.0071
+Epoch 12: Encoder Loss: 0.2989, Decoder Loss: 0.0070
+Validation - Encoder Loss: 0.2792, Decoder Loss: 0.0067
+Epoch 13: Encoder Loss: 0.2814, Decoder Loss: 0.0065
+Validation - Encoder Loss: 0.2639, Decoder Loss: 0.0064
+Epoch 14: Encoder Loss: 0.2667, Decoder Loss: 0.0061
+Validation - Encoder Loss: 0.2761, Decoder Loss: 0.0059
+Epoch 15: Encoder Loss: 0.2571, Decoder Loss: 0.0058
+Validation - Encoder Loss: 0.2468, Decoder Loss: 0.0055
+Epoch 16: Encoder Loss: 0.2463, Decoder Loss: 0.0053
+Validation - Encoder Loss: 0.2805, Decoder Loss: 0.0050
+Program interrupted. (Use 'cont' to resume).
+--Call--
+> /home/sujaynair/.local/lib/python3.10/site-packages/torch/utils/data/_utils/signal_handling.py(63)handler()
+-> def handler(signum, frame):
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 191, in <module>
+    for batch_data in train_loader:
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1317, in _next_data
+    self._shutdown_workers()
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1442, in _shutdown_workers
+    w.join(timeout=_utils.MP_STATUS_CHECK_INTERVAL)
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 40, in wait
+    if not wait([self.sentinel], timeout):
+  File "/usr/lib/python3.10/multiprocessing/connection.py", line 931, in wait
+    ready = selector.select(timeout)
+  File "/usr/lib/python3.10/selectors.py", line 416, in select
+    fd_event_list = self._selector.poll(timeout)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/utils/data/_utils/signal_handling.py", line 63, in handler
+    def handler(signum, frame):
+  File "/usr/lib/python3.10/bdb.py", line 92, in trace_dispatch
+    return self.dispatch_call(frame, arg)
+  File "/usr/lib/python3.10/bdb.py", line 137, in dispatch_call
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+Traceback (most recent call last):
+  File "/home/sujaynair/RaCA-SOC-a-spectrum-analysis/RaCA-SOC-a/Step9/updatedTrain.py", line 191, in <module>
+    for batch_data in train_loader:
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1317, in _next_data
+    self._shutdown_workers()
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1442, in _shutdown_workers
+    w.join(timeout=_utils.MP_STATUS_CHECK_INTERVAL)
+  File "/usr/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/usr/lib/python3.10/multiprocessing/popen_fork.py", line 40, in wait
+    if not wait([self.sentinel], timeout):
+  File "/usr/lib/python3.10/multiprocessing/connection.py", line 931, in wait
+    ready = selector.select(timeout)
+  File "/usr/lib/python3.10/selectors.py", line 416, in select
+    fd_event_list = self._selector.poll(timeout)
+  File "/home/sujaynair/.local/lib/python3.10/site-packages/torch/utils/data/_utils/signal_handling.py", line 63, in handler
+    def handler(signum, frame):
+  File "/usr/lib/python3.10/bdb.py", line 92, in trace_dispatch
+    return self.dispatch_call(frame, arg)
+  File "/usr/lib/python3.10/bdb.py", line 137, in dispatch_call
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
